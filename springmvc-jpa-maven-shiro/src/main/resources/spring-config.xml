@@ -1,0 +1,256 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+        http://www.springframework.org/schema/cache
+        http://www.springframework.org/schema/cache/spring-cache-3.1.xsd
+        http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring
+        http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.1.xsd
+         http://www.springframework.org/schema/data/jpa
+         http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd">
+
+    <!-- 注解支持 -->
+    <context:annotation-config />
+
+    <!-- 扫描注解Bean -->
+    <context:component-scan base-package="com.tang">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 数据源 -->
+    <!--<bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">-->
+        <!--&lt;!&ndash; 数据库驱动 &ndash;&gt;-->
+        <!--<property name="driverClass" value="${jdbc.driverClassName}" />-->
+        <!--&lt;!&ndash; 相应驱动的jdbcUrl&ndash;&gt;-->
+        <!--<property name="jdbcUrl" value="${jdbc.url}" />-->
+        <!--&lt;!&ndash; 数据库的用户名 &ndash;&gt;-->
+        <!--<property name="username" value="${jdbc.username}" />-->
+        <!--&lt;!&ndash; 数据库的密码 &ndash;&gt;-->
+        <!--<property name="password" value="${jdbc.password}" />-->
+        <!--&lt;!&ndash; 检查数据库连接池中空闲连接的间隔时间，单位是分，默认值：240，如果要取消则设置为0 &ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="idleConnectionTestPeriod" value="${BoneCP.idleConnectionTestPeriod}" />&ndash;&gt;-->
+        <!--&lt;!&ndash; 连接池中未使用的链接最大存活时间，单位是分，默认值：60，如果要永远存活设置为0 &ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="idleMaxAge" value="${BoneCP.idleMaxAge}" />&ndash;&gt;-->
+        <!--&lt;!&ndash; 每个分区最大的连接数 &ndash;&gt;-->
+        <!--<property name="maxConnectionsPerPartition" value="${BoneCP.maxConnectionsPerPartition}" />-->
+        <!--&lt;!&ndash; 每个分区最小的连接数 &ndash;&gt;-->
+        <!--<property name="minConnectionsPerPartition" value="${BoneCP.minConnectionsPerPartition}" />-->
+        <!--&lt;!&ndash; 分区数 ，默认值2，最小1，推荐3-4，视应用而定 &ndash;&gt;-->
+        <!--<property name="partitionCount" value="${BoneCP.partitionCount}" />-->
+        <!--&lt;!&ndash; 每次去拿数据库连接的时候一次性要拿几个,默认值：2 &ndash;&gt;-->
+        <!--<property name="acquireIncrement" value="${BoneCP.acquireIncrement}" />-->
+        <!--&lt;!&ndash; 缓存prepared statements的大小，默认值：0 &ndash;&gt;-->
+        <!--<property name="statementsCacheSize" value="${BoneCP.statementsCacheSize}" />-->
+        <!--&lt;!&ndash; 每个分区释放链接助理进程的数量，默认值：3，除非你的一个数据库连接的时间内做了很多工作，不然过多的助理进程会影响你的性能 &ndash;&gt;-->
+        <!--<property name="releaseHelperThreads" value="${BoneCP.releaseHelperThreads}" />-->
+    <!--</bean>-->
+
+    <!-- Spring Data Jpa配置, 扫描base-package下所有继承于Repository<T,ID>的接口 -->
+    <jpa:repositories base-package="com.tang" transaction-manager-ref="txManager"
+                      entity-manager-factory-ref="entityManagerFactory"/>
+
+    <!-- JPA实体管理器工厂 -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="persistenceProvider" ref="persistenceProvider"/>
+        <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
+        <property name="jpaDialect" ref="jpaDialect"/>
+
+        <property name="packagesToScan" value="com.tang.entity"/>
+
+        <property name="jpaProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+                <prop key="hibernate.max_fetch_depth">3</prop>
+                <prop key="hibernate.jdbc.fetch_size">18</prop>
+                <prop key="hibernate.jdbc.batch_size">10</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop> <!-- validate/update/create/create-drop-->
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">true</prop>
+                <prop key="javax.persistence.validation.mode">none</prop>
+            </props>
+        </property>
+    </bean>
+    <!-- 用于指定持久化实现厂商类 -->
+    <bean id="persistenceProvider" class="org.hibernate.ejb.HibernatePersistence"/>
+    <!-- 用于设置JPA实现厂商的特定属性 -->
+    <bean id="jpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="database" value="MYSQL"/>
+    </bean>
+    <!-- 用于指定一些高级特性 -->
+    <bean id="jpaDialect" class="org.springframework.orm.jpa.vendor.HibernateJpaDialect"/>
+
+    <!-- 事务管理器 -->
+    <bean id="txManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+
+    <!-- 注解式事务 -->
+    <tx:annotation-driven transaction-manager="txManager"/>
+
+    <!-- 启用缓存注解功能 -->
+    <ehcache:annotation-driven cache-manager="ehCacheManager" />
+
+
+    <!-- cacheManager工厂类，指定ehcache.xml的位置 -->
+    <bean id="ehCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
+          p:configLocation="classpath:/ehcache.xml"/>
+
+    <!--&lt;!&ndash; 数据源 &ndash;&gt;-->
+    <!--<bean id="dataSource" class="com.jolbox.bonecp.BoneCPDataSource"-->
+          <!--destroy-method="close">-->
+        <!--&lt;!&ndash; 数据库驱动 &ndash;&gt;-->
+        <!--<property name="driverClass" value="${jdbc.driverClassName}" />-->
+        <!--&lt;!&ndash; 相应驱动的jdbcUrl&ndash;&gt;-->
+        <!--<property name="jdbcUrl" value="${jdbc.url}" />-->
+        <!--&lt;!&ndash; 数据库的用户名 &ndash;&gt;-->
+        <!--<property name="username" value="${jdbc.username}" />-->
+        <!--&lt;!&ndash; 数据库的密码 &ndash;&gt;-->
+        <!--<property name="password" value="${jdbc.password}" />-->
+        <!--&lt;!&ndash; 检查数据库连接池中空闲连接的间隔时间，单位是分，默认值：240，如果要取消则设置为0 &ndash;&gt;-->
+        <!--<property name="idleConnectionTestPeriod"-->
+                  <!--value="${BoneCP.idleConnectionTestPeriod}" />-->
+        <!--&lt;!&ndash; 连接池中未使用的链接最大存活时间，单位是分，默认值：60，如果要永远存活设置为0 &ndash;&gt;-->
+        <!--<property name="idleMaxAge" value="${BoneCP.idleMaxAge}" />-->
+        <!--&lt;!&ndash; 每个分区最大的连接数 &ndash;&gt;-->
+        <!--<property name="maxConnectionsPerPartition"-->
+                  <!--value="${BoneCP.maxConnectionsPerPartition}" />-->
+        <!--&lt;!&ndash; 每个分区最小的连接数 &ndash;&gt;-->
+        <!--<property name="minConnectionsPerPartition"-->
+                  <!--value="${BoneCP.minConnectionsPerPartition}" />-->
+        <!--&lt;!&ndash; 分区数 ，默认值2，最小1，推荐3-4，视应用而定 &ndash;&gt;-->
+        <!--<property name="partitionCount"-->
+                  <!--value="${BoneCP.partitionCount}" />-->
+        <!--&lt;!&ndash; 每次去拿数据库连接的时候一次性要拿几个,默认值：2 &ndash;&gt;-->
+        <!--<property name="acquireIncrement"-->
+                  <!--value="${BoneCP.acquireIncrement}" />-->
+        <!--&lt;!&ndash; 缓存prepared statements的大小，默认值：0 &ndash;&gt;-->
+        <!--<property name="statementsCacheSize"-->
+                  <!--value="${BoneCP.statementsCacheSize}" />-->
+        <!--&lt;!&ndash; 每个分区释放链接助理进程的数量，默认值：3，除非你的一个数据库连接的时间内做了很多工作，不然过多的助理进程会影响你的性能 &ndash;&gt;-->
+        <!--<property name="releaseHelperThreads"-->
+                  <!--value="${BoneCP.releaseHelperThreads}" />-->
+    <!--</bean>-->
+
+    <bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+        <property name="alias" value="proxoolDataSource"/>
+        <property name="driver" value="${connection.driver_class}" />
+        <property name="driverUrl" value="${connection.url}" />
+        <property name="user" value="${connection.username}" />
+        <property name="password" value="${connection.password}" />
+        <property name="maximumConnectionCount" value="${proxool.maximum.connection.count}"/>
+        <property name="minimumConnectionCount" value="${proxool.minimum.connection.count}" />
+        <property name="statistics" value="${proxool.statistics}" />
+        <property name="simultaneousBuildThrottle" value="${proxool.simultaneous.build.throttle}"/>
+    </bean>
+
+    <!--<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+        <!--<property name="packagesToScan">-->
+            <!--<list>-->
+                <!--<value>com.tang</value>-->
+            <!--</list>-->
+        <!--</property>-->
+        <!--<property name="hibernateProperties">-->
+            <!--<props>-->
+                <!--<prop key="hibernate.dialect">${hibernate.dialect}</prop>-->
+                <!--<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>-->
+                <!--<prop key="hibernate.format_sql">true</prop>-->
+                <!--<prop key="hibernate.query.substitutions">${hibernate.query.substitutions}</prop>-->
+                <!--<prop key="hibernate.default_batch_fetch_size">${hibernate.default_batch_fetch_size}</prop>-->
+                <!--<prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>-->
+
+            <!--</props>-->
+        <!--</property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 开启注解事务 只对当前配置文件有效 &ndash;&gt;-->
+    <!--<tx:annotation-driven transaction-manager="txManager"/>-->
+
+    <!--<bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">-->
+        <!--<property name="sessionFactory" ref="sessionFactory"/>-->
+    <!--</bean>-->
+
+    <!--<tx:advice id="txAdvice" transaction-manager="txManager">-->
+        <!--<tx:attributes>-->
+            <!--<tx:method name="save*" propagation="REQUIRED" />-->
+            <!--<tx:method name="add*" propagation="REQUIRED" />-->
+            <!--<tx:method name="create*" propagation="REQUIRED" />-->
+            <!--<tx:method name="insert*" propagation="REQUIRED" />-->
+            <!--<tx:method name="update*" propagation="REQUIRED" />-->
+            <!--<tx:method name="merge*" propagation="REQUIRED" />-->
+            <!--<tx:method name="del*" propagation="REQUIRED" />-->
+            <!--<tx:method name="remove*" propagation="REQUIRED" />-->
+            <!--<tx:method name="put*" propagation="REQUIRED" />-->
+            <!--<tx:method name="use*" propagation="REQUIRED"/>-->
+            <!--&lt;!&ndash;hibernate4必须配置为开启事务 否则 getCurrentSession()获取不到&ndash;&gt;-->
+            <!--<tx:method name="get*" propagation="REQUIRED" read-only="true" />-->
+            <!--<tx:method name="count*" propagation="REQUIRED" read-only="true" />-->
+            <!--<tx:method name="find*" propagation="REQUIRED" read-only="true" />-->
+            <!--<tx:method name="list*" propagation="REQUIRED" read-only="true" />-->
+            <!--<tx:method name="*" read-only="true" />-->
+        <!--</tx:attributes>-->
+    <!--</tx:advice>-->
+    <!--<aop:config expose-proxy="true">-->
+        <!--&lt;!&ndash; 只对业务逻辑层实施事务 &ndash;&gt;-->
+        <!--<aop:pointcut id="txPointcut" expression="execution(* com.tang.service..*.*(..))" />-->
+        <!--<aop:pointcut id="txPointcut1" expression="execution(* com.tang.common.service..*.*(..))" />-->
+        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut"/>-->
+        <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut1"/>-->
+    <!--</aop:config>-->
+
+    <!-- 定时调度-->
+
+    <!--<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--<property name="targetObject" ref="cronJob" />-->
+        <!--<property name="targetMethod" value="deleteFiles" />-->
+    <!--</bean>-->
+    <!--<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">-->
+        <!--&lt;!&ndash; see the example of method invoking job above &ndash;&gt;-->
+        <!--<property name="jobDetail" ref="jobDetail" />-->
+        <!--&lt;!&ndash; 10 seconds &ndash;&gt;-->
+        <!--<property name="startDelay" value="10000" />-->
+        <!--&lt;!&ndash; repeat every 60*60*6 seconds &ndash;&gt;-->
+        <!--<property name="repeatInterval" value="21600000" />-->
+    <!--</bean>-->
+    <!--<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">-->
+        <!--<property name="jobDetail" ref="jobDetail" />-->
+        <!--&lt;!&ndash; run every morning at 3 AM &ndash;&gt;-->
+        <!--<property name="cronExpression" value="0 0 3 * * ?" />-->
+    <!--</bean>-->
+    <!--<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">-->
+        <!--<property name="triggers">-->
+            <!--<list>-->
+                <!--<ref bean="cronTrigger" />-->
+                <!--<ref bean="simpleTrigger" />-->
+            <!--</list>-->
+        <!--</property>-->
+    <!---->
+    <!--</bean>-->
+
+
+</beans>

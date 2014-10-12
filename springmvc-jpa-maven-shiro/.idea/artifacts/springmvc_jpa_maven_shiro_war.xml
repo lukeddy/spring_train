@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc-jpa-maven-shiro:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="springmvc_jpa.war">
+      <element id="artifact" artifact-name="springmvc-jpa-maven-shiro:war exploded" />
+    </root>
+  </artifact>
+</component>

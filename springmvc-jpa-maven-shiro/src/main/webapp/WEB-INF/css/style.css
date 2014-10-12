@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* ========================================================
+ * Global Styling
+ * ======================================================== */
+
+a:link {color:#3254a0; text-decoration:none;}
+a:visited {color:#3254a0; text-decoration:none;}
+a:hover {color:#3254a0; text-decoration:underline;}
+a:active {color:#3254a0; text-decoration:none;}
+
+body {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 0 #fff;
+    filter: dropshadow(color=#fff, offx=1, offy=1);
+}
+
+.msg{
+   font-size: 20px;
+   text-align: center;
+   font-weight: bold;
+   border:1px solid red;
+   padding:6px;
+}
