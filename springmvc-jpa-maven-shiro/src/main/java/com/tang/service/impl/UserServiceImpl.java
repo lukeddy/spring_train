@@ -41,4 +41,9 @@ public class UserServiceImpl extends DefultBaseService implements IUserService {
         return getByAccount(account)!=null;
     }
 
+    @Override
+    public void insertTest() throws Exception {
+        throw new Exception("insert data error");
+    }
+
 }
