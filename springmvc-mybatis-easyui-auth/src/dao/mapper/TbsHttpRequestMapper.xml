@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 
+         符号转义说明
+    &lt;          < 
+    &gt;          >  
+    &lt;&gt;     <>
+    &amp;        & 
+    &apos;       '
+    &quot;       "
+  <![CDATA[ 这里写你的SQL或者符号 ]]> 
+ -->
+<mapper namespace="dao.TbsHttpRequestMapper" > 
+<!-- Result Map 数据库映射到实体类  -->
+<resultMap id="tableMapToBean" type="bean.TbsHttpRequestBean" >
+	<result column="id" property="id"/>
+	<result column="name" property="name"/>
+	<result column="header" property="header"/>
+	<result column="firstPage" property="firstPage"/>
+	<result column="encoding" property="encoding"/>
+	<result column="listName" property="listName"/>
+	<result column="regexs" property="regexs"/>
+	<result column="arrtSplit" property="arrtSplit"/>
+	<result column="inserts" property="inserts"/>
+	<result column="listUrlRegex" property="listUrlRegex"/>
+	<result column="listUrlTest" property="listUrlTest"/>
+	<result column="listPageId" property="listPageId"/>
+	<result column="listSplitUrlChar" property="listSplitUrlChar"/>
+	<result column="listSplitUrl" property="listSplitUrl"/>
+	<result column="listRegexs" property="listRegexs"/>
+	<result column="listAttrSplit" property="listAttrSplit"/>
+	<result column="listInserts" property="listInserts"/>
+	<result column="contUrlRegex" property="contUrlRegex"/>
+	<result column="contUrlTest" property="contUrlTest"/>
+	<result column="contRegexs" property="contRegexs"/>
+	<result column="contAttrSplit" property="contAttrSplit"/>
+	<result column="contInserts" property="contInserts"/>
+</resultMap>
+
+<!-- tbaleColumns  所有列 -->
+<sql id="tbaleColumns">
+    id,name,header,firstPage,encoding,listName,regexs,arrtSplit,inserts,listUrlRegex,listUrlTest,listPageId,listSplitUrlChar,listSplitUrl,listRegexs,listAttrSplit,listInserts,contUrlRegex,contUrlTest,contRegexs,contAttrSplit,contInserts
+</sql>
+
+<!-- insertParams  入库操作 -->
+<sql id="insertParams">
+    #{id},#{name},#{header},#{firstPage},#{encoding},#{listName},#{regexs},#{arrtSplit},#{inserts},#{listUrlRegex},#{listUrlTest},#{listPageId},#{listSplitUrlChar},#{listSplitUrl},#{listRegexs},#{listAttrSplit},#{listInserts},#{contUrlRegex},#{contUrlTest},#{contRegexs},#{contAttrSplit},#{contInserts}
+</sql>
+       
+<!-- updateParams  更新操作 -->
+<sql id="updateParams">
+    name=#{name},header=#{header},firstPage=#{firstPage},encoding=#{encoding},listName=#{listName},regexs=#{regexs},arrtSplit=#{arrtSplit},inserts=#{inserts},listUrlRegex=#{listUrlRegex},listUrlTest=#{listUrlTest},listPageId=#{listPageId},listSplitUrlChar=#{listSplitUrlChar},listSplitUrl=#{listSplitUrl},listRegexs=#{listRegexs},listAttrSplit=#{listAttrSplit},listInserts=#{listInserts},contUrlRegex=#{contUrlRegex},contUrlTest=#{contUrlTest},contRegexs=#{contRegexs},contAttrSplit=#{contAttrSplit},contInserts=#{contInserts}
+</sql>
+
+<!-- where 条件  -->
+<sql id="where">
+     where 1=1
+</sql>
+
+<!-- columnKey  主键 列名称 ,视图获取不到主键 需要设置 -->
+<sql id="columnKey">
+     and id=#{id}
+</sql>
+
+<!-- 条件 查询  , 去掉主键列-->
+<sql id="andOther">
+	<trim  suffixOverrides="," >
+	 	  	  	 	  	  
+	    <if test="name != null and name !='' ">
+		    and name =  #{name}
+	    </if>
+	  	 	  	  
+	    <if test="header != null and header !='' ">
+		    and header =  #{header}
+	    </if>
+	  	 	  	  
+	    <if test="firstPage != null and firstPage !='' ">
+		    and firstPage =  #{firstPage}
+	    </if>
+	  	 	  	  
+	    <if test="encoding != null and encoding !='' ">
+		    and encoding =  #{encoding}
+	    </if>
+	  	 	  	  
+	    <if test="listName != null and listName !='' ">
+		    and listName =  #{listName}
+	    </if>
+	  	 	  	  
+	    <if test="regexs != null and regexs !='' ">
+		    and regexs =  #{regexs}
+	    </if>
+	  	 	  	  
+	    <if test="arrtSplit != null and arrtSplit !='' ">
+		    and arrtSplit =  #{arrtSplit}
+	    </if>
+	  	 	  	  
+	    <if test="inserts != null and inserts !='' ">
+		    and inserts =  #{inserts}
+	    </if>
+	  	 	  	  
+	    <if test="listUrlRegex != null and listUrlRegex !='' ">
+		    and listUrlRegex =  #{listUrlRegex}
+	    </if>
+	  	 	  	  
+	    <if test="listUrlTest != null " >
+		    and listUrlTest =  #{listUrlTest}
+	    </if>
+	  	 	  	  
+	    <if test="listPageId != null " >
+		    and listPageId =  #{listPageId}
+	    </if>
+	  	 	  	  
+	    <if test="listSplitUrlChar != null and listSplitUrlChar !='' ">
+		    and listSplitUrlChar =  #{listSplitUrlChar}
+	    </if>
+	  	 	  	  
+	    <if test="listSplitUrl != null and listSplitUrl !='' ">
+		    and listSplitUrl =  #{listSplitUrl}
+	    </if>
+	  	 	  	  
+	    <if test="listRegexs != null and listRegexs !='' ">
+		    and listRegexs =  #{listRegexs}
+	    </if>
+	  	 	  	  
+	    <if test="listAttrSplit != null and listAttrSplit !='' ">
+		    and listAttrSplit =  #{listAttrSplit}
+	    </if>
+	  	 	  	  
+	    <if test="listInserts != null and listInserts !='' ">
+		    and listInserts =  #{listInserts}
+	    </if>
+	  	 	  	  
+	    <if test="contUrlRegex != null and contUrlRegex !='' ">
+		    and contUrlRegex =  #{contUrlRegex}
+	    </if>
+	  	 	  	  
+	    <if test="contUrlTest != null " >
+		    and contUrlTest =  #{contUrlTest}
+	    </if>
+	  	 	  	  
+	    <if test="contRegexs != null and contRegexs !='' ">
+		    and contRegexs =  #{contRegexs}
+	    </if>
+	  	 	  	  
+	    <if test="contAttrSplit != null and contAttrSplit !='' ">
+		    and contAttrSplit =  #{contAttrSplit}
+	    </if>
+	  	 	  	  
+	    <if test="contInserts != null and contInserts !='' ">
+		    and contInserts =  #{contInserts}
+	    </if>
+	  	 	 
+	</trim>
+</sql>
+   
+<!-- 查询条件  包含所有列 -->
+<sql id="andOtherAll">
+	<trim  suffixOverrides="," >
+	 	  	  
+	    <if test="id != null and id !='' " >
+		    and id =  #{id}
+	    </if>
+	  	 	  	  
+	    <if test="name != null and name !='' " >
+		    and name =  #{name}
+	    </if>
+	  	 	  	  
+	    <if test="header != null and header !='' " >
+		    and header =  #{header}
+	    </if>
+	  	 	  	  
+	    <if test="firstPage != null and firstPage !='' " >
+		    and firstPage =  #{firstPage}
+	    </if>
+	  	 	  	  
+	    <if test="encoding != null and encoding !='' " >
+		    and encoding =  #{encoding}
+	    </if>
+	  	 	  	  
+	    <if test="listName != null and listName !='' " >
+		    and listName =  #{listName}
+	    </if>
+	  	 	  	  
+	    <if test="regexs != null and regexs !='' " >
+		    and regexs =  #{regexs}
+	    </if>
+	  	 	  	  
+	    <if test="arrtSplit != null and arrtSplit !='' " >
+		    and arrtSplit =  #{arrtSplit}
+	    </if>
+	  	 	  	  
+	    <if test="inserts != null and inserts !='' " >
+		    and inserts =  #{inserts}
+	    </if>
+	  	 	  	  
+	    <if test="listUrlRegex != null and listUrlRegex !='' " >
+		    and listUrlRegex =  #{listUrlRegex}
+	    </if>
+	  	 	  	  
+	    <if test="listUrlTest != null " >
+		    and listUrlTest =  #{listUrlTest}
+	    </if>
+	  	 	  	  
+	    <if test="listPageId != null " >
+		    and listPageId =  #{listPageId}
+	    </if>
+	  	 	  	  
+	    <if test="listSplitUrlChar != null and listSplitUrlChar !='' " >
+		    and listSplitUrlChar =  #{listSplitUrlChar}
+	    </if>
+	  	 	  	  
+	    <if test="listSplitUrl != null and listSplitUrl !='' " >
+		    and listSplitUrl =  #{listSplitUrl}
+	    </if>
+	  	 	  	  
+	    <if test="listRegexs != null and listRegexs !='' " >
+		    and listRegexs =  #{listRegexs}
+	    </if>
+	  	 	  	  
+	    <if test="listAttrSplit != null and listAttrSplit !='' " >
+		    and listAttrSplit =  #{listAttrSplit}
+	    </if>
+	  	 	  	  
+	    <if test="listInserts != null and listInserts !='' " >
+		    and listInserts =  #{listInserts}
+	    </if>
+	  	 	  	  
+	    <if test="contUrlRegex != null and contUrlRegex !='' " >
+		    and contUrlRegex =  #{contUrlRegex}
+	    </if>
+	  	 	  	  
+	    <if test="contUrlTest != null " >
+		    and contUrlTest =  #{contUrlTest}
+	    </if>
+	  	 	  	  
+	    <if test="contRegexs != null and contRegexs !='' " >
+		    and contRegexs =  #{contRegexs}
+	    </if>
+	  	 	  	  
+	    <if test="contAttrSplit != null and contAttrSplit !='' " >
+		    and contAttrSplit =  #{contAttrSplit}
+	    </if>
+	  	 	  	  
+	    <if test="contInserts != null and contInserts !='' " >
+		    and contInserts =  #{contInserts}
+	    </if>
+	  	 	 
+	</trim>
+</sql>
+
+<!-- 自定义查询 -->
+<sql id="sql">
+   <if test="sql != null and sql !=''">
+       ${sql}
+   </if>
+   <if test="sql == null || sql==''">
+      select <include refid="tbaleColumns"/> from TbsHttpRequest <include refid="where"/>
+   </if>
+</sql>
+
+<!-- 查询条件 -->
+<sql id="queryCondition">
+     <if test="queryCondition != null and queryCondition != ''">
+         ${queryCondition}
+     </if>
+</sql>
+
+
+<!-- 添加,插入记录   -->
+<insert id="insert"  parameterType="bean.TbsHttpRequestBean" >
+    insert into TbsHttpRequest(<include refid="tbaleColumns"/>) values(<include refid="insertParams"/>);
+</insert>
+
+<!-- 添加,SQL添加   -->
+<insert id="insertBySql" parameterType="java.lang.String">
+    <include refid="sql"/>
+</insert>
+
+<!-- 删除,主键删除   -->
+<delete id="deleteByPrimaryKey" parameterType="bean.TbsHttpRequestBean">
+    delete from TbsHttpRequest<include refid="where"/><include refid="columnKey"/>
+</delete>
+
+<!-- 删除,实体删除   -->
+<delete id="deleteByEntity" parameterType="bean.TbsHttpRequestBean">
+    delete from TbsHttpRequest<include refid="where"/><include refid="andOtherAll"/>
+</delete>
+
+<!-- 删除,SQL删除   -->
+<delete id="deleteBySql" parameterType="java.lang.String">
+      <include refid="sql"/>
+</delete>
+
+<!-- 修改,主键更新  -->
+<update id="updateByPrimaryKey" parameterType="bean.TbsHttpRequestBean" >
+	update TbsHttpRequest set <include refid="updateParams"/><include refid="where"/><include refid="columnKey"/>
+</update>
+
+<!-- 修改,SQL更新 -->
+<update id="updateBySql" parameterType="java.lang.String">
+	  <include refid="sql"/>
+</update>
+
+<!-- 查询,主键查询   -->
+<select id="selectByPrimaryKey"  resultMap="tableMapToBean" parameterType="java.lang.Object">
+	select <include refid="tbaleColumns"/> from TbsHttpRequest <include refid="where"/> <include refid="columnKey"/>
+</select>
+
+<!-- 查询,实体查询   -->
+<select id="selectByEntiry"  resultMap="tableMapToBean" parameterType="bean.TbsHttpRequestBean">
+	select <include refid="tbaleColumns"/> from TbsHttpRequest <include refid="where"/> <include refid="andOtherAll"/>
+</select>
+
+<!-- 查询,SQL -->
+<select id="selectBySql"  resultMap="tableMapToBean" parameterType="java.lang.String">
+     <include refid="sql"/>
+</select>
+  	
+<!-- 查询 ,总行数,分页 ,模型 -->
+<select id="selectByModelCount" resultType="java.lang.Integer"  parameterType="bean.model.TbsHttpRequestModel">
+	select count(1) from TbsHttpRequest <include refid="where"/> <include refid="andOtherAll"/>
+    ${pageUtil.queryCondition}
+    ${pageUtil.andCondition}
+</select>
+  	
+<!-- 查询,排序,分页,模型  -->
+<select id="selectByModel" resultMap="tableMapToBean"  parameterType="bean.model.TbsHttpRequestModel">
+	select <include refid="tbaleColumns"/>from TbsHttpRequest<include refid="where"/><include refid="andOtherAll"/>
+    ${pageUtil.queryCondition}
+    ${pageUtil.andCondition}
+    ${pageUtil.orderByCondition}
+    ${pageUtil.limit}
+</select>
+
+<!-- 查询,总行数,Map -->
+<select id="selectByMapCount" resultType="java.lang.Integer"  parameterType="java.util.Map">
+	select count(1) from TbsHttpRequest <include refid="where"/><include refid="andOtherAll"/>
+    ${queryCondition}
+	<if test="andCondition !=null and andCondition !=''">
+	   and ${andCondition}
+	</if>
+	<if test="orderCondition != null and queryCondition != ''" >
+    	order by ${orderCondition}
+    </if>
+</select>
+  	
+<!-- 查询,参数查询,Map -->
+<select id="selectByMap" resultMap="tableMapToBean"  parameterType="java.util.Map">
+	select <include refid="tbaleColumns"/>from TbsHttpRequest <include refid="where"/><include refid="andOtherAll"/>
+    ${queryCondition}
+	<if test="andCondition !=null and andCondition !=''">
+	   and ${andCondition}
+	</if>
+	<if test="orderCondition != null and queryCondition != ''" >
+    	order by ${orderCondition}
+    </if>
+</select>
+
+<!-- 查询,总行数,Map分页 -->
+<select id="selectByMapPagingCount" resultType="java.lang.Integer"  parameterType="java.util.Map">
+	select count(0) from TbsHttpRequest <include refid="where"/><include refid="andOtherAll"/>
+    ${queryCondition}
+	<if test="andCondition !=null and andCondition !=''">
+	   and ${andCondition}
+	</if>
+    ${pageUtil.queryCondition}
+    ${pageUtil.andCondition}
+</select>
+
+<!-- 查询,参数查询,Map分页 -->
+<select id="selectByMapPaging" resultMap="tableMapToBean"  parameterType="java.util.Map">
+	select <include refid="tbaleColumns"/>from TbsHttpRequest <include refid="where"/><include refid="andOtherAll"/>
+	${queryCondition}
+	<if test="andCondition !=null and andCondition !=''">
+	   and ${andCondition}
+	</if>
+	<if test="orderCondition != null and queryCondition != ''" >
+    	order by ${orderCondition}
+    </if>
+    ${pageUtil.queryCondition}
+    ${pageUtil.andCondition}
+    ${pageUtil.orderByCondition}
+    ${pageUtil.limit}
+</select>
+
+<!--//////////////////////增加/////////////////////// -->
+</mapper>   

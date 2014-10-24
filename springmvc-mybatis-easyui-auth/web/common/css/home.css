@@ -1,0 +1,82 @@
+@charset "utf-8";
+/***主页样式***/
+.home-wrap{width:960px;margin:0 auto;}
+/**广告样式**/
+.nav_ads{height:90px;overflow:hidden;}
+.main_ads{width:728px;height:90px;overflow:hidden;}
+
+.share{ width:938px; height:27px; margin:0 auto; margin-bottom:8px; background:url(img/shbg.gif) repeat-x; border:#d1d1d1 solid 1px; padding:2px 10px 0 10px; overflow:hidden}
+#bdshare a{ margin-right:13px;_margin-right:12px;}
+
+.home-wrap{height:auto;overflow:hidden;}
+/**列表样式**/
+.main{float:left;width:728px;}
+.lmain{width:726px;border:#d8d8d8 1px solid;background:#FFF;}
+.lmain .item{height:38px;border-bottom:#d8d8d8 1px solid;background:url(img/title_bg.gif) repeat-x;}
+.lmain .item h2{float:left;height:18px;margin-top:12px;text-indent:1em;overflow:hidden;width:100px;font-size:14px;color:#333}
+.lmain .item .act{float:right;height:16px;line-height:16px;margin:12px 12px 0px 0px;_display:inline;}
+.lmain .item .act a{color:#666;}
+.lmain ul{width:726px;height:auto;overflow:hidden;}
+.lmain ul li{float:left;height:218px;margin:14px 0px 0px 14px;width:128px;_display:inline;overflow:hidden;position:relative;}
+.lmain ul li .pic{height:160px;width:120px;display:block;overflow:hidden;position:relative;border:1px solid #DDDDDD;padding:3px;}
+.lmain ul li .pic img{height:160px;width:120px;}
+.lmain ul li a.pic:hover{border:1px solid #6abae7}
+.lmain ul li .num{background:url(img/rec_bg.gif) no-repeat;cursor:pointer;height:51px;overflow:hidden;padding:0;position:absolute;top:0;left:76px;width:50px;}
+.lmain ul li .txt{color:#FFF;display:block;height:20px;background:#000;filter:alpha(opacity=68);-moz-opacity:0.68;opacity:0.68;line-height:20px;position:absolute;right: 4px;text-align:center;top:144px;width:120px;}
+.lmain ul li p{color:#B7B7B7;height:15px;line-height:15px;margin-top:4px;overflow:hidden;text-align:center;}
+.lmain ul li .movielist_tt{text-align:center;margin-top:6px;height:16px;line-height:16px;overflow:hidden;}
+.lmain ul li .movielist_tt a{font-size:14px;}
+/*文字列表*/
+.lmain ul.ultxt{width:710px;height:167px;overflow:hidden;border-top:#CCC 1px dashed;margin:0 auto;}
+.lmain ul.ultxt li{float:left;height:18px;margin:13px 0px 0px 14px;width:128px;text-indent:1.2em;background:url(img/icon.gif) 0px -84px no-repeat;_display:inline;overflow:hidden;}
+/**右侧样式**/
+.side{float:right;width:222px;}
+.rside{background:#FFF;width:220px;border:#d8d8d8 1px solid;height:auto;overflow:hidden;}
+.rside .item{height:38px;border-bottom:#d8d8d8 1px solid;background:url(img/title_bg.gif) repeat-x;}
+.rside .item h2{float:left;height:18px;margin-top:12px;text-indent:1em;overflow:hidden;width:100px;font-size:14px;color:#333}
+.rside .item .act{float:right;height:16px;line-height:16px;margin:12px 12px 0px 0px;_display:inline;}
+.rside .item .act a{color:#666;}
+.rside ul{width:220px;overflow:hidden}
+.rside li{width:200px;height:18px;line-height:18px;text-indent:1.2em;background:url(img/icon.gif) 0px -84px no-repeat;margin:10px auto;vertical-align:bottom;overflow:hidden;}
+.rside li a{color:#666}
+.rside li a:hover{color:#ea550e}
+.rside em{float:right;font:normal 11px/18px Verdana;color:#666;}
+.rside em.red{color:#FF0000;}
+
+/*****电影类型样式******/
+	.home-dx-type{
+		  width:960px;
+		  margin:0 auto 8px auto;
+		  height:auto;
+		  overflow:hidden;
+		  background-color: #F9F9F9;
+		  border: solid #DDDDDD 1px;
+		  padding-top: 8px;
+		  padding-bottom: 8px;
+	}
+	.home-dx-type ul li a {
+	    -moz-text-blink: none;
+	    -moz-text-decoration-color: -moz-use-text-color;
+	    -moz-text-decoration-line: none;
+	    -moz-text-decoration-style: solid;
+	    /* line-height: 18px; */
+	    margin-left: 10px;
+	    font-family: "微软雅黑";
+	    font-size: 14px;
+    }
+    .home-dx-type_gray{
+	    font-family: "微软雅黑";
+	    font-size: 14px;
+        margin-left:10px;
+        color: #666666;
+        line-height: 0px;
+    }
+
+/**友情链接**/
+.flink{height:auto;overflow:hidden;width:958px;border:#d8d8d8 1px solid;background:#FFF;margin:0 auto; margin-bottom:10px;}
+.flink .item{height:38px;border-bottom:#d8d8d8 1px solid;background:url(img/title_bg.gif) repeat-x;}
+.flink .item h2{float:left;height:18px;margin-top:12px;text-indent:1em;overflow:hidden;width:100px;font-size:14px;color:#333}
+.flink .item .act{float:right;height:16px;line-height:16px;margin:12px 12px 0px 0px;_display:inline;}
+.flink ul{height:auto;margin:6px auto; width:940px;overflow:hidden}
+.flink ul li{height:20px;float:left; margin:0px 0px 6px 6px;margin:0px 0px 6px 3px\9;_margin:0px 0px 6px -1px\9;text-align:left;}
+.flink ul li a{color:#666;}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!-- 扫描classpath包下所有带有注解的类   自动翻译注解 -->
+	<!-- <context:component-scan base-package="org.springframework.samples.mvc.basic" /> -->
+	<!-- <context:component-scan base-package="cms.sm.service" />
+	<context:component-scan base-package="cms.sm.controller" /> -->
+	<context:component-scan base-package="service" />
+		<context:component-scan base-package="controller.admin" />
+			<context:component-scan base-package="controller.view" />
+	   
+   <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射   请求映射-->  
+   <!-- <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />-->
+   <!-- @ResponseBody乱码  设置成UTF-8 JSON -->
+ 	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+	  <property name="messageConverters"> 
+		  <list> 
+			   <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" /> 
+			   <bean class="org.springframework.http.converter.StringHttpMessageConverter"> 
+				   <property name="supportedMediaTypes"> 
+				      <list> 
+				       <value>text/plain;charset=UTF-8</value> 
+				      </list> 
+				   </property> 
+				</bean> 
+			    <bean class="org.springframework.http.converter.ResourceHttpMessageConverter" /> 
+			    <bean class="org.springframework.http.converter.xml.SourceHttpMessageConverter" /> 
+			    <bean class="org.springframework.http.converter.xml.XmlAwareFormHttpMessageConverter" /> 
+			    <bean class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" /> 
+		  </list> 
+	  </property> 
+    </bean>
+	<!-- @ResultMapping标签的解析  声明是没有 defaultAnnotationHandlerMapping这个属性的 -->
+	<mvc:annotation-driven />
+	
+	<!-- Forword 请求转发  请求 index.do 转发到  admin/jsp/login.jsp -->
+	<mvc:view-controller path="index.html" view-name="index"/>
+	<mvc:view-controller path="admin/TbcConTemp/TbcConTempDlg.html" view-name="admin/TbcConTemp/TbcConTempDlg"/>
+    <mvc:view-controller path="admin/TbcConTemp/TbcConTempSearchDlg.html" view-name="admin/TbcConTemp/TbcConTempSearchDlg"/>
+	<mvc:view-controller path="admin/TbcListTemp/TbcListTempDlg.html" view-name="admin/TbcListTemp/TbcListTempDlg"/>
+    <mvc:view-controller path="admin/TbcListTemp/TbcListTempSearchDlg.html" view-name="admin/TbcListTemp/TbcListTempSearchDlg"/>
+	<mvc:view-controller path="admin/TbcTemp/TbcTempDlg.html" view-name="admin/TbcTemp/TbcTempDlg"/>
+    <mvc:view-controller path="admin/TbcTemp/TbcTempSearchDlg.html" view-name="admin/TbcTemp/TbcTempSearchDlg"/>
+	<mvc:view-controller path="admin/TbsHttpRequest/TbsHttpRequestDlg.html" view-name="admin/TbsHttpRequest/TbsHttpRequestDlg"/>
+    <mvc:view-controller path="admin/TbsHttpRequest/TbsHttpRequestSearchDlg.html" view-name="admin/TbsHttpRequest/TbsHttpRequestSearchDlg"/>
+	<mvc:view-controller path="admin/TbsMenu/TbsMenuDlg.html" view-name="admin/TbsMenu/TbsMenuDlg"/>
+    <mvc:view-controller path="admin/TbsMenu/TbsMenuSearchDlg.html" view-name="admin/TbsMenu/TbsMenuSearchDlg"/>
+	<mvc:view-controller path="admin/TbsRole/TbsRoleDlg.html" view-name="admin/TbsRole/TbsRoleDlg"/>
+    <mvc:view-controller path="admin/TbsRole/TbsRoleSearchDlg.html" view-name="admin/TbsRole/TbsRoleSearchDlg"/>
+	<mvc:view-controller path="admin/TbsRoleMenu/TbsRoleMenuDlg.html" view-name="admin/TbsRoleMenu/TbsRoleMenuDlg"/>
+    <mvc:view-controller path="admin/TbsRoleMenu/TbsRoleMenuSearchDlg.html" view-name="admin/TbsRoleMenu/TbsRoleMenuSearchDlg"/>
+	<mvc:view-controller path="admin/TbsRoleUser/TbsRoleUserDlg.html" view-name="admin/TbsRoleUser/TbsRoleUserDlg"/>
+    <mvc:view-controller path="admin/TbsRoleUser/TbsRoleUserSearchDlg.html" view-name="admin/TbsRoleUser/TbsRoleUserSearchDlg"/>
+	<mvc:view-controller path="admin/TbsUser/TbsUserDlg.html" view-name="admin/TbsUser/TbsUserDlg"/>
+    <mvc:view-controller path="admin/TbsUser/TbsUserSearchDlg.html" view-name="admin/TbsUser/TbsUserSearchDlg"/>
+	<mvc:view-controller path="download.html" view-name="download"/>
+	<!-- <mvc:view-controller path="admin/login.html" view-name="admin/login"/> -->
+	<!-- <mvc:view-controller path="admin/index.html" view-name="admin/index"/> -->
+	
+	<!-- 资源静态文件目录映射 -->
+	<!-- 当在web.xml 中   DispatcherServlet使用     <url-pattern>/</url-pattern> 映射时，能映射静态资源 -->  
+	<mvc:default-servlet-handler/>
+	<mvc:resources location="/admin/common/**" mapping="/admin/common/**"/>
+	<mvc:resources location="/common/**" mapping="/common/**"/> 
+	<!--需要在 web.xml 配置 url-pattern / 启动下面这个handler  -->
+	<!--  <mvc:default-servlet-handler/> -->
+
+	<!-- 拦截器 -->
+	<mvc:interceptors>
+		<bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+		<mvc:interceptor>
+			 <mvc:mapping path="/admin/**"/>
+			<bean class="util.spring.interceptor.SecurityInterceptor">
+				<property name="excludeUrls">
+					<list>
+						<value>/admin/login.html</value>
+						<value>/admin/verifyCode.html</value>
+						<value>/admin/exit.html</value>
+						<value>/admin/downloadDir.html</value>
+						<value>/admin/rollBack.html</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:interceptor>
+<!-- 		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<bean class="interceptor.SecurityInterceptor">
+				<property name="excludeUrls">
+					<list>
+						<value>/menuController/allTreeNode.action</value>
+						<value>/userController/reg.action</value>
+						<value>/userController/combogrid.action</value>
+					</list>
+				</property>
+			</bean>-->
+		<bean class="util.spring.interceptor.ExceptionInterceptor"/>
+	</mvc:interceptors>
+	
+	<!-- Saves a locale change using a cookie -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
+	
+	<!-- Application Message Bundle 
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename" value="/WEB-INF/messages/messages" />
+		<property name="cacheSeconds" value="0" />
+	</bean>
+	-->
+	
+	<!-- 按照控制类名称解析  testController  默认的解析器   -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+	   <property name="pathPrefix" value="/admin"/>
+	</bean> -->
+	
+	<!-- Resolves view names to protected .jsp resources within the /WEB-INF/views directory -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    <!-- <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/> -->
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+	<!-- 上传必须配置 不然转换会报错 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="maxUploadSize">
+			<value>32505856</value><!-- 上传文件大小限制为31M，31*1024*1024 -->
+		</property>
+		<property name="maxInMemorySize">
+			<value>4096</value>
+		</property>
+	</bean>
+	
+	<!-- <bean class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"></bean> -->
+	
+	<!-- Forwards  -->
+    <!--   <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+         <property name="mappings">
+            <props>
+               <prop key="/admin/jsp/login.do">loginController</prop>
+               <prop key="login.do">loginController</prop>
+            </props>
+         </property>
+    </bean>
+    
+	 按照 URL文件名自动称解析到视图    不可以指定路径 
+	<bean id="loginController" class="org.springframework.web.servlet.mvc.UrlFilenameViewController"/>
+	
+	这个需要指定 Controller 名称     可以指定路径
+     <bean id="loginController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+	   <property name="viewName" value="admin/jsp/login"></property>
+	</bean> -->
+</beans>

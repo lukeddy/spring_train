@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+  version="2.0">
+ <description>MYJSTL 1.0 functions library</description>
+ <display-name>MYJSTL functions</display-name>
+ <tlib-version>1.1</tlib-version>
+ <!--  <jspversion>1.1</jspversion>-->
+ <short-name>e</short-name>
+ <uri>http://www.ssi.com/ssi-el/e</uri>
+ <function>
+   <name>basePath</name>
+    <!--此处是定义类的路径-->
+   <function-class>common.web.el.FunctionEL</function-class>
+     <!--此处是定义类的返回值类型和传入参数类型-->
+   <function-signature>java.lang.String basePath()</function-signature>
+    <example>
+      	${e:basePath()}
+    </example>
+ </function>
+</taglib>

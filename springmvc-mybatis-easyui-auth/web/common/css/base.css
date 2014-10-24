@@ -1,0 +1,81 @@
+@charset "utf-8";
+/***全局样式***/
+body{margin:0;padding:0;background:url(img/bg.gif) repeat-x #E6E6E6;font-family:"宋体"}
+form,input,select,ul,li,h1,h2,h3,h4,h5,h6,p{margin:0;padding:0}
+body,td,select,input,div{font-size:12px;color:#333}
+img,a img{border:none}
+body,td,select,input,div{line-height:20px;word-wrap:break-word;word-break:break-all}
+dl,dd,dt{margin:0;padding:0}
+input,select{line-height:16px}
+li{list-style:none}
+a{color:#333;text-decoration:none}
+a:hover{text-decoration:underline}
+.cl{clear:both}
+/**公用样式**/
+.blank7{height:7px;overflow:hidden;clear:both;}
+.blank10{height:10px;overflow:hidden;clear:both;}
+.blank14{height:14px;overflow:hidden;clear:both;}
+.top-wrap,.hd-wrap,.nav{width:960px;margin:0 auto;}
+.welcome,.downdesk,.topzt,.topdp,.toply,.topty{background:url(img/icon.gif) no-repeat;}
+/**顶部样式**/
+.top-wrap{height:22px;}
+.welcome{float:left;width:400px;_display:inline;height:22px;line-height:22px;color:#979797;text-indent:1.5em;background-position:0px 4px;}
+.toolbar{float:right;height:22px;width:513px;overflow:hidden;margin-right:-15px;}
+.toolbar li{float:left;margin-left:5px;height:22px;_display:inline;}
+.toolbar li a{display:block;height:20px;line-height:22px;overflow:hidden;}
+/*下载到桌面*/
+.toolbar li.downdesk{width:85px;text-indent:1.4em;background-position:0px -19px;}
+.toolbar li.downdesk a{color:#1187ca;}
+/*专题*/
+.toolbar li.topzt{width:45px;text-indent:1.2em;background-position:0px -38px;}
+.top-wrap .toolbar li.topzt a{color:#FF0000;}
+/*2011大片*/
+.toolbar li.topdp{width:70px;text-indent:1.2em;background-position:0px -58px;}
+.toolbar li.topdp a{color:#FF0000;}
+/*留言求片*/
+.toolbar li.toply{width:70px;text-indent:1.2em;background-position:0px -58px;}
+.toolbar li.toply a{color:#FF6600;}
+/*后面三个*/
+.toolbar li.topty{width:64px;text-indent:1.2em;background-position:0px -58px;}
+.toolbar li.topty a{color:#979797;}
+/**头部样式**/
+.hd-wrap{height:43px;margin:10px auto;}
+/*LOGO*/
+.logo{float:left;width:163px;height:43px;_display:inline;}
+/*搜索样式*/
+.search{float:right;width:281px;height:22px;margin-top:11px;background:url(img/search_bg.gif) no-repeat;position:relative;z-index:100;}
+.search .keyword input{float:left;width:115px;margin-left:24px;height:16px;line-height:16px;padding-top:4px;border:none;_display:inline;color:#888;background:none;font-size:12px;outline:none}
+.search .selectwrap{width:74px;float:left;text-indent:1.2em;height:22px;line-height:22px;_display:inline;overflow:hidden;cursor:pointer;}
+.search #selectvalue{height:22px;line-height:24px;overflow:hidden;color:#808080;}
+.search #options{position:absolute;z-index:9999;width:72px;top:21px;left:139px;background:#FFF;border:#b4b4b4 1px solid;}
+.search #options a{display:block;height:22px;width:72px;line-height:24px;_line-height:24px;overflow:hidden;color:#808080;}
+.search #options a:hover{text-decoration:none;background:#ececec;}
+.search .search_btn button{float:left;width:60px;height:22px;border:0;margin-left:8px;_display:inline;background:none;cursor:pointer;}
+/**导航样式**/
+.nav-wrap{width:100%;height:27px;padding-top:4px;background:url(img/nav_bg.gif) repeat-x;}
+.nav{height:24px;}
+.nav ul li{float:left; height:24px;margin:0 1px;_display:inline;}
+.nav ul li a{line-height:26px;overflow:hidden;text-align:center;color:#FFF;font-size:12px;font-weight:bold; padding:5px 10px 3px 11px;}
+.nav ul li a:hover,.nav ul li.current a{text-decoration:none;background:url(img/blank.gif) repeat;color:#1187ca;}
+
+/**热门专题**/
+.hotzt{width:948px;height:16px;background:url(img/rbg.gif) repeat-x;border:#A9CCDF 1px solid;padding:7px 0px 5px 10px;margin:0 auto; margin-bottom:8px; border-top:none; _overflow:hidden; _margin-top:-0px;}
+.hotzt ul{ padding:0;}
+.hotzt ul li{float:left;height:16px;line-height:16px; width:auto;overflow:visible; margin-right:16px;margin-right:10px\9;}
+.hotzt ul li#lastli{ margin:0}
+.hotzt ul li a{text-align:left;color:#666; font-size:13px;}
+.hotzt ul li a:hover{text-decoration:underline;}
+.hotpsn{ display:block; width:21px; height:12px;margin:-32px 0 0 525px;margin:-32px 0 0 525px\9;_margin:-32px 0 0 260px;float:left;_position:relative;}
+.hotpsh{ display:block; width:21px; height:12px;margin:-26px 0 0 113px;float:left;margin:-26px 0 0 122px\9;_margin:-26px 0 0 61px; _position:relative;}
+.hotzt ul li.zt_tt{font-weight:bold;color:#1187ca;width:72px;width:82px\9; margin:0}
+
+/**广告样式**/
+.nav_ads{height:90px;overflow:hidden;width:960px;margin:10px auto;}
+/**底部样式**/
+.footer{clear:both;width:958px;border:1px #D4D3D3 solid;background:#FFF;margin:0px auto;}
+.footer .links{width:960px;height:20px;margin:0 auto;margin-top:10px;text-align:center;color:#666;}
+.footer .links a{margin:0 10px;color:#666;}
+.footer .ftxt{width:960px;margin:0 auto 8px auto;}
+.footer .ftxt ul li{line-height:18px;padding:2px 0;text-align:center;color:#666;}
+.footer, .footer a{color:#666;font-family:"Arial";}
+.footer a:hover{color:#666;}
