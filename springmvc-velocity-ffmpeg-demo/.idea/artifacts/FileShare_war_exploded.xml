@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="FileShare:war exploded">
+    <output-path>$PROJECT_DIR$/target/FileShare</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="FileShare/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springmvc-velocity-ffmpeg-demo" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

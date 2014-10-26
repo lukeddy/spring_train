@@ -1,0 +1,2476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CCaseConfig">
+    <option name="checkoutReserved" value="false" />
+    <option name="markExternalChangeAsUpToDate" value="true" />
+    <option name="checkInUseHijack" value="true" />
+    <option name="useUcmModel" value="true" />
+    <option name="synchOutside" value="false" />
+    <option name="isHistoryResticted" value="true" />
+    <option name="useIdenticalSwitch" value="true" />
+    <option name="synchActivitiesOnRefresh" value="true" />
+    <option name="lastScr" value="" />
+    <option name="scrTextFileName" value="" />
+    <option name="historyRevisionsNumber" value="4" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="23559501-4c8a-494c-aadc-f4c521d935a0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvc_velocity_ffmpeg_demo_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\.idea\artifacts\SSHDemo_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\email\IEmailSender.java" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\email\MyEmailSender.java" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\captions.vtt" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\demo - 副本 - 副本.html" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\demo.html" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\demo2.html" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\oceans-clip.mp4" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\oceans-clip.webm" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\style.css" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video-js.png" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video.js" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\js\player\video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\test\java\MyEmailSenderTest.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/FileShare_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/FileShare_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ProgressiveServer_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ProgressiveServer_war.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/SSHDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/SSHDemo_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change_password.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change_password.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ffmpeg.properties" afterPath="$PROJECT_DIR$/src/main/resources/ffmpeg.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/file_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/file_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navigation.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navigation.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_page.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_page.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_result.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_result.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\ProgressiveServer.iml" afterPath="$PROJECT_DIR$/springmvc-velocity-ffmpeg-demo.iml" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\dao\IBaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/dao/IBaseDao.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\dao\impl\BaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/dao/impl/BaseDao.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\domain\BaseTO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/domain/BaseTO.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\exception\DaoException.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/exception/DaoException.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\exception\ServiceException.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/exception/ServiceException.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\service\BaseService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/service/BaseService.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\common\service\impl\BaseServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/common/service/impl/BaseServiceImpl.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\APIController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/APIController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/AdminController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\EmailController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/EmailController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\FileController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/FileController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/HomeController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\controller\ReportController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/controller/ReportController.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\cron\CronJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/cron/CronJob.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\dao\FileInfoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/dao/FileInfoDAO.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\dao\UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/dao/UserDAO.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\dao\impl\FileInfoDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/FileInfoDaoImpl.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\dao\impl\UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/UserDaoImpl.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\domain\AjaxResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/domain/AjaxResponse.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\domain\FileInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/domain/FileInfo.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\domain\FileList.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/domain/FileList.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\domain\User.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/domain/User.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\email\Alert.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/email/Alert.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\email\EmailSender.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/email/EmailSender.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\service\FileInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/service/FileInfoService.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\service\UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/service/UserService.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\service\impl\FileInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/service/impl/FileInfoServiceImpl.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\service\impl\UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/service/impl/UserServiceImpl.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\AppFolders.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/AppFolders.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/Constants.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\CustomDateSerializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/CustomDateSerializer.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\DateUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/DateUtils.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\FileUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/FileUtil.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\RequestUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/RequestUtils.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\SessionFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/SessionFilter.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\UTF8StringHttpMessageConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/UTF8StringHttpMessageConverter.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\java\com\innover\util\VideoUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/tzq/util/VideoUtil.java" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\resources\templates\global_footer.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/GlobalFooter-HtmlText.vm" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\resources\templates\global_header.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/GlobalHeader-HtmlText.vm" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\resources\templates\reminder.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/test.vm" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\resources\templates\with_header_footer.vm" afterPath="$PROJECT_DIR$/src/main/resources/templates/MyAlert-HtmlText.vm" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\jsp\error_all.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/errors.jsp" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\player\demo2.html" afterPath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\player\demo2.jsp" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\sql\pdl_server.sql" afterPath="$PROJECT_DIR$/sql/demo.sql" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\test\java\LowesLogo.png" afterPath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\main\webapp\WEB-INF\images\LowesLogo.png" />
+      <change type="MOVED" beforePath="X:\TODOS\java\spring_train\springmvc-velocity-ffmpeg-demo\src\test\java\com\steven\service\impl\TestBase.java" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" />
+    </list>
+    <ignored path="SSHDemo.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/innover/util/SessionFilter.java" line="2" class="SessionFilter.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/innover/controller/FileController.java" line="162" class="com.innover.controller.FileController" package="com.innover.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules converted="true" />
+    <ui_properties converted="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FileShare" />
+    <favorites_list name="SSHDemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="SessionFilter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/SessionFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1900">
+              <caret line="58" column="75" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UTF8StringHttpMessageConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/UTF8StringHttpMessageConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1260">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoUtil.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/VideoUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="1320">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-servlet.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1321" max-vertical-offset="1840">
+              <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-email.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-email.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1100">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-config.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="69.04" vertical-offset="1726" max-vertical-offset="2580">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jdbc.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ffmpeg.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ffmpeg.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.074074075" vertical-offset="0" max-vertical-offset="270">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/RequestUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="11060">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/innover/email/MyEmailSender.java" />
+        <option value="$PROJECT_DIR$/src/test/java/MyEmailSenderTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/innover/controller/EmailController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/innover/email/EmailSender.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/global_header.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/global_footer.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/with_header_footer.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/alert_with_header_footer.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/MyAlert-HtmlText.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/GlobalFooter-PlainText.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/GlobalHeader-PlainText.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/GlobalHeader-HtmlText.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/GlobalFooter-HtmlText.vm" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/htmlEmailTemplate.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/email.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tzq/util/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EmailSenderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EmailSenderTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navigation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change_password.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_page.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_result.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/file_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/send_email.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/alert.vm" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tzq/controller/EmailController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sql/demo.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/ffmpeg.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tzq/util/VideoUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LastSuccessfulUpdateTracker">
+    <option name="changeLists">
+      <list>
+        <PersistentChangeList>
+          <option name="name" value="Default" />
+        </PersistentChangeList>
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="E:\dev\maven311\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="keepSourceFolders" value="false" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="demo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="demo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ModuleEditorState">
+    <option name="LAST_EDITED_MODULE_NAME" />
+    <option name="LAST_EDITED_TAB_NAME" />
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="useP4CONFIG" value="false" />
+    <option name="port" value="192.168.200.58:1666" />
+    <option name="client" value="work" />
+    <option name="user" value="root" />
+    <option name="passwd" value="dfc3dfc4dfc4dfc5dfdcdfcfdfd8" />
+    <option name="ENABLED" value="false" />
+    <option name="USE_LOGIN" value="false" />
+    <option name="LOGIN_SILENTLY" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Assignment issues</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issues</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>DeclarationGroovy</id>
+          </State>
+          <State>
+            <id>Encapsulation issues</id>
+          </State>
+          <State>
+            <id>Error handling</id>
+          </State>
+          <State>
+            <id>Finalization issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Initialization issues</id>
+          </State>
+          <State>
+            <id>J2ME issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aids</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Logging issues</id>
+          </State>
+          <State>
+            <id>Memory issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Serialization issues</id>
+          </State>
+          <State>
+            <id>Threading issues</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <showMembers ProjectPane="false" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FileShare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProgressiveServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-velocity-ffmpeg-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-velocity-ffmpeg-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springmvc-velocity-ffmpeg-demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites">
+        <subPane subId="SSHDemo">
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.intellij.ide.favoritesTreeView.FavoritesTreeNodeDescriptor" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="MavenSettings" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.side.proportion" value="0.45770568" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.innover.controller" />
+      <recent name="com.innover.util" />
+      <recent name="com.steven.service.impl" />
+      <recent name="com.steven.service" />
+      <recent name="com.steven.dao.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="X:\TODOS\java\ProgressiveServer\src\main\webapp\WEB-INF\js" />
+      <recent name="X:\TODOS\java\ProgressiveServer\src\main\webapp\WEB-INF\images" />
+      <recent name="E:\p4_workspace\mobile\ProgressiveServer\src\main\resources\templates" />
+      <recent name="E:\p4_workspace\mobile\ProgressiveServer\src\main\webapp\WEB-INF\images" />
+      <recent name="E:\p4_workspace\mobile\ProgressiveServer\src\main\webapp\WEB-INF\jsp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="X:\TODOS\java\springmvc-velocity-ffmpeg-demo" />
+      <recent name="E:\p4_workspace\mobile\ProgressiveServer\src\main\webapp\WEB-INF\images" />
+      <recent name="D:\work\IdeaProjects\SSHDemo\src\main\webapp\WEB-INF\jsp" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.steven.dao" />
+      <recent name="com.steven.common.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.PDL">
+    <configuration default="false" name="EmailSenderTest.testSendEmail2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProgressiveServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmailSenderTest" />
+      <option name="METHOD_NAME" value="testSendEmail2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmailSenderTest.testSendEmailWithAttachment2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProgressiveServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmailSenderTest" />
+      <option name="METHOD_NAME" value="testSendEmailWithAttachment2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmailSenderTest.testSendAlertEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProgressiveServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmailSenderTest" />
+      <option name="METHOD_NAME" value="testSendAlertEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmailSenderTest.testSendAlertEmailWithAttachment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProgressiveServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmailSenderTest" />
+      <option name="METHOD_NAME" value="testSendAlertEmailWithAttachment" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmailSenderTest2.testSendAlertEmailWithHeaderAndFooter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="ProgressiveServer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EmailSenderTest2" />
+      <option name="METHOD_NAME" value="testSendAlertEmailWithHeaderAndFooter" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <option name="name" value="Go application" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <option name="scriptName" value="" />
+      <option name="scriptArguments" value="" />
+      <option name="builderArguments" value="" />
+      <option name="goBuildBeforeRun" value="false" />
+      <option name="goOutputDir" value="" />
+      <option name="workingDir" value="" />
+      <option name="envVars" value="" />
+      <option name="goVetEnabled" value="false" />
+      <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="FAIL" />
+            <option name="failureBehavior" value="FAST" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="pluginUpdatePolicy" value="DO_NOT_UPDATE" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="threads" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="1.6" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_SSHDemo" />
+      </server-settings>
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62463" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvc-velocity-ffmpeg-demo:war" />
+        </option>
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
+      <option name="name" value="Go Test" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <option name="envVars" value="" />
+      <option name="testRunnerArgs" value="" />
+      <option name="testTargetType" value="Package" />
+      <option name="packageName" value="" />
+      <option name="packageDir" value="" />
+      <option name="testFile" value="" />
+      <option name="testArgs" value="" />
+      <option name="workingDir" value="" />
+      <option name="executeWhat" value="Test" />
+      <option name="filter" value="" />
+      <option name="useShortRun" value="false" />
+      <option name="testBeforeBenchmark" value="false" />
+      <option name="goVetEnabled" value="false" />
+      <module name="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PDL" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.52" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springmvc-velocity-ffmpeg-demo:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SSHDemo" />
+      </server-settings>
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Cover" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62463" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="package" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvc-velocity-ffmpeg-demo:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.PDL" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendEmail2" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendEmailWithAttachment2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendAlertEmail" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendAlertEmailWithAttachment" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.EmailSenderTest2.testSendAlertEmailWithHeaderAndFooter" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EmailSenderTest2.testSendAlertEmailWithHeaderAndFooter" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendAlertEmailWithAttachment" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendAlertEmail" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendEmailWithAttachment2" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EmailSenderTest.testSendEmail2" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23559501-4c8a-494c-aadc-f4c521d935a0" name="Default" comment="" />
+      <created>1337502181729</created>
+      <updated>1337502181729</updated>
+      <workItem from="1414307249892" duration="11984000" />
+      <workItem from="1414337866471" duration="1052000" />
+      <workItem from="1414338972587" duration="528000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13564000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21331316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886535" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48034188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.394958" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28711486" sideWeight="0.50072044" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4034188" sideWeight="0.49126804" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.22128852" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.4969651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.37254903" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939487" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21255673" sideWeight="0.71288514" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.49711815" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2624811" sideWeight="0.71288514" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36581197" sideWeight="0.49423632" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1256" height="676" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.4969651" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.49722221" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="92" y="92" width="1256" height="676" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21331316" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24886535" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28711486" sideWeight="0.50072044" order="15" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.4969651" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.4969651" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.49711815" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2624811" sideWeight="0.71288514" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7589744" sideWeight="0.49423632" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.49722221" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48034188" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.394958" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4034188" sideWeight="0.49126804" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.22128852" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27521613" sideWeight="0.37254903" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21255673" sideWeight="0.71288514" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39939487" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="VcsOperationLog">
+    <option name="operations">
+      <list>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/resources/ffmpeg.properties" />
+        </P4EditOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/FileController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/FileController.java" />
+        </P4MoveRenameOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/captions.vtt" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/captions.vtt" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/demo - 副本 - 副本.html" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/demo - 副本 - 副本.html" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/demo.html" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/demo.html" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/demo2.html" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/demo2.html" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/oceans-clip.mp4" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/oceans-clip.mp4" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/oceans-clip.webm" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/oceans-clip.webm" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/style.css" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/style.css" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video-js.css" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video-js.css" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video-js.min.css" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video-js.min.css" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video-js.png" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video-js.png" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video-js.swf" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video-js.swf" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video.js" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video.js" />
+        </P4CopyOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/player/video.min.js" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/playerdemo/video-js/video.min.js" />
+        </P4CopyOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/webapp/player/demo2.html" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/webapp/player/demo2.jsp" />
+        </P4MoveRenameOperation>
+        <P4CopyOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/player.jsp" />
+          <option name="sourcePath" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/demo2.html" />
+        </P4CopyOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/file_list.jsp" />
+        </P4EditOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video-js.swf" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video-js.min.css" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/captions.vtt" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video-js.css" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/oceans-clip.mp4" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/demo2.html" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/style.css" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video.min.js" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/demo.html" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video.js" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/oceans-clip.webm" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/video-js.png" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/player/demo - 副本 - 副本.html" />
+        </P4DeleteOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/pom.xml" />
+        </P4EditOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
+        </P4AddOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
+        </P4EditOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/test/java/com/steven/service/impl/TestBase.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/test/java/TestBase.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/resources/templates/reminder.vm" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/resources/templates/test.vm" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/DateUtils.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/DateUtils.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/test/java/LowesLogo.png" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/images/LowesLogo.png" />
+        </P4MoveRenameOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navigation.jsp" />
+        </P4EditOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/SessionFilter.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/SessionFilter.java" />
+        </P4MoveRenameOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/test/java/MyEmailSenderTest.java" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/java/com/innover/email/IEmailSender.java" />
+        </P4DeleteOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/java/com/innover/email/MyEmailSender.java" />
+        </P4DeleteOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/resources/templates/with_header_footer.vm" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/resources/templates/MyAlert-HtmlText.vm" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/resources/templates/global_footer.vm" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/resources/templates/GlobalFooter-HtmlText.vm" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/resources/templates/global_header.vm" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/resources/templates/GlobalHeader-HtmlText.vm" />
+        </P4MoveRenameOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/ant.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/misc.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        </P4EditOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/sqldialects.xml" />
+        </P4AddOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/HomeController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/HomeController.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/APIController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/APIController.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/ReportController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/ReportController.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/service/UserService.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/service/UserService.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/service/FileInfoService.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/service/FileInfoService.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/domain/FileList.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/domain/FileList.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/AdminController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/AdminController.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/service/impl/UserServiceImpl.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/service/impl/UserServiceImpl.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/service/impl/FileInfoServiceImpl.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/service/impl/FileInfoServiceImpl.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/VideoUtil.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/VideoUtil.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/UTF8StringHttpMessageConverter.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/UTF8StringHttpMessageConverter.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/AppFolders.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/AppFolders.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/CustomDateSerializer.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/CustomDateSerializer.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/cron/CronJob.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/cron/CronJob.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/FileUtil.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/FileUtil.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/dao/FileInfoDAO.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/dao/FileInfoDAO.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/dao/UserDAO.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/dao/UserDAO.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/dao/impl/UserDaoImpl.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/UserDaoImpl.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/dao/impl/FileInfoDaoImpl.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/FileInfoDaoImpl.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/exception/DaoException.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/exception/DaoException.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/domain/AjaxResponse.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/domain/AjaxResponse.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/domain/FileInfo.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/domain/FileInfo.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/domain/User.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/domain/User.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/service/BaseService.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/service/BaseService.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/service/impl/BaseServiceImpl.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/service/impl/BaseServiceImpl.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/exception/ServiceException.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/exception/ServiceException.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/dao/IBaseDao.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/dao/IBaseDao.java" />
+        </P4MoveRenameOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/resources/spring-servlet.xml" />
+        </P4EditOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/dao/impl/BaseDao.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/dao/impl/BaseDao.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/common/domain/BaseTO.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/common/domain/BaseTO.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/Constants.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/Constants.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/util/RequestUtils.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/util/RequestUtils.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/email/Alert.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/email/Alert.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/email/EmailSender.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/email/EmailSender.java" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/java/com/innover/controller/EmailController.java" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/java/com/tzq/controller/EmailController.java" />
+        </P4MoveRenameOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/js/bootstrap.js" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/js/bootstrap.min.js" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.css" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.css.map" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap.min.css" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.css" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.css.map" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/css/bootstrap-theme.min.css" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+        </P4AddOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/js/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+        </P4AddOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/change_password.jsp" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_page.jsp" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_result.jsp" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user_list.jsp" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        </P4EditOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/webapp/sql/pdl_server.sql" />
+          <option name="newPath" value="$PROJECT_DIR$/sql/demo.sql" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error_all.jsp" />
+          <option name="newPath" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/errors.jsp" />
+        </P4MoveRenameOperation>
+        <P4MoveRenameOperation>
+          <option name="changeList" value="Default" />
+          <option name="oldPath" value="$PROJECT_DIR$/ProgressiveServer.iml" />
+          <option name="newPath" value="$PROJECT_DIR$/springmvc-velocity-ffmpeg-demo.iml" />
+        </P4MoveRenameOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/artifacts/ProgressiveServer_war.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/artifacts/FileShare_war_exploded.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/artifacts/SSHDemo_war_exploded.xml" />
+        </P4EditOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/modules.xml" />
+        </P4EditOperation>
+        <P4DeleteOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/artifacts/SSHDemo_war.xml" />
+        </P4DeleteOperation>
+        <P4EditOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/.name" />
+        </P4EditOperation>
+        <P4AddOperation>
+          <option name="changeList" value="Default" />
+          <option name="path" value="$PROJECT_DIR$/.idea/artifacts/springmvc_velocity_ffmpeg_demo_war.xml" />
+        </P4AddOperation>
+      </list>
+    </option>
+  </component>
+  <component name="VssConfiguration">
+    <option name="CLIENT_PATH" value="" />
+    <option name="SRCSAFEINI_PATH" value="" />
+    <option name="USER_NAME" value="" />
+    <option name="PWD" value="" />
+    <CheckoutOptions>
+      <option name="COMMENT" value="" />
+      <option name="DO_NOT_GET_LATEST_VERSION" value="false" />
+      <option name="REPLACE_WRITABLE" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckoutOptions>
+    <CheckinOptions>
+      <option name="COMMENT" value="" />
+      <option name="KEEP_CHECKED_OUT" value="false" />
+      <option name="RECURSIVE" value="false" />
+    </CheckinOptions>
+    <AddOptions>
+      <option name="STORE_ONLY_LATEST_VERSION" value="false" />
+      <option name="CHECK_OUT_IMMEDIATELY" value="false" />
+    </AddOptions>
+    <UndocheckoutOptions>
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="REPLACE_LOCAL_COPY" value="2" />
+      <option name="RECURSIVE" value="false" />
+    </UndocheckoutOptions>
+    <GetOptions>
+      <option name="REPLACE_WRITABLE" value="0" />
+      <option name="MAKE_WRITABLE" value="false" />
+      <option name="ANSWER_NEGATIVELY" value="false" />
+      <option name="ANSWER_POSITIVELY" value="false" />
+      <option name="RECURSIVE" value="false" />
+      <option name="VERSION" />
+    </GetOptions>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tzq/util/SessionFilter.java</url>
+          <line>2</line>
+          <properties />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/tzq/controller/FileController.java</url>
+          <line>162</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/navigation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.275862" vertical-offset="0" max-vertical-offset="380">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/player.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1220">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_page.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.8965516" vertical-offset="0" max-vertical-offset="1820">
+          <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload_result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1034484" vertical-offset="81" max-vertical-offset="600">
+          <caret line="10" column="96" selection-start-line="10" selection-start-column="96" selection-end-line="10" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137931" vertical-offset="540" max-vertical-offset="7360">
+          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/file_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.965517" vertical-offset="320" max-vertical-offset="4500">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/send_email.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.862069" vertical-offset="488" max-vertical-offset="920">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/alert.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-56.551723" vertical-offset="0" max-vertical-offset="2020">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="280" max-vertical-offset="440">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EmailSenderTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1560">
+          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EmailSenderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1059" max-vertical-offset="2660">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DateTimeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="440">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3300">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/demo.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="900">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/errors.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/common/dao/IBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1300">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1640">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="460">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="481" max-vertical-offset="3000">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/EmailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="584" max-vertical-offset="1320">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/APIController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="1920">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1451" max-vertical-offset="3540">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/cron/CronJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="520">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/dao/FileInfoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/FileInfoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/dao/impl/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/domain/AjaxResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="123" max-vertical-offset="820">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/domain/FileInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="2180">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/domain/FileList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="740">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1400">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/email/EmailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="1100">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/email/Alert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="1120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/service/FileInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="260">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/service/impl/FileInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="760">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/AppFolders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/CustomDateSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="19740">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/RequestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11060">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/SessionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1141" max-vertical-offset="1900">
+          <caret line="58" column="75" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/UTF8StringHttpMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tzq/util/VideoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1321" max-vertical-offset="1840">
+          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-email.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="69.04" vertical-offset="1726" max-vertical-offset="2580">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ffmpeg.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.074074075" vertical-offset="0" max-vertical-offset="270">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>springmvc-velocity-ffmpeg-demo:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-compiler-2.9.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Go SDK go1.3.1 windows/amd64</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|springmvc-velocity-ffmpeg-demo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45770568" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

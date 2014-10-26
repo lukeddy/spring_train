@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ProgressiveServer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="MyServer.war">
+      <element id="artifact" artifact-name="ProgressiveServer:war exploded" />
+    </root>
+  </artifact>
+</component>

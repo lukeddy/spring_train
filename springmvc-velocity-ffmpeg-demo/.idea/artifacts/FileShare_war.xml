@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FileShare:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="FileShare.war">
+      <element id="artifact" artifact-name="FileShare:war exploded" />
+    </root>
+  </artifact>
+</component>

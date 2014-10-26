@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<body>
+Dear Registered User,<p/>
+
+This is a reminder email. Please remember to submit your application by EOD today.<p/>
+
+Thanks<br/>
+Development Team.
+
+title:${title}
+
+<br/>
+
+content:${content}
+
+<br/>
+<br/>
+${alert.alertNumber}<br/>
+${alert.date}</br>
+${alert.subject}</br>
+${alert.distribution}</br>
+${alert.alertText}</br>
+${alert.alertCard}</br>
+${alert.contact}</br>
+</body>
+</html>

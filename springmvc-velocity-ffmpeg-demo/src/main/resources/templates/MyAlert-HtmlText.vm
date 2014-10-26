@@ -1,0 +1,12 @@
+#parse( ${header} )
+<h1>this is content area</h1>
+<div>
+        ${alert.alertNumber}<br/>
+        ${alert.date}</br>
+        ${alert.subject}</br>
+        ${alert.distribution}</br>
+        ${alert.alertText}</br>
+        ${alert.alertCard}</br>
+        ${alert.contact}</br>
+</div>
+#parse( ${footer} )

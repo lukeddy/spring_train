@@ -1,0 +1,282 @@
+body {
+    background: url("../images/bg.jpg") repeat scroll left top #FFFFFF;
+    color: #1D3C41;
+    font-family: Cambria,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+    font-size: 15px;
+    font-weight: 400;
+    overflow-y: scroll;
+}
+/******************************widget style***********************/
+.ui-widget {
+  font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+  font-size: 1.1em;
+}
+.ui-widget-content {
+  background: url("../images/white_bg.png") repeat-x scroll 50% bottom #FCFDFD;
+  border: 1px solid #A6C9E2;
+  color: #222222;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 5px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 5px;
+}
+
+/******************************navigation.jsp***********************/
+#nav {
+  background: url("../images/navigation_bg.png") repeat-x scroll 50% bottom #FCFDFD;
+  border: 1px solid #A6C9E2;
+  color: #222222;
+    height:26px;
+    padding-top:6px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+#nav a{
+  color: #FFFFFF;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-decoration: none;
+}
+#nav a:hover{
+    color:#E1898F;
+}
+/******************************index.jsp***************************/
+#loginError{
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    padding-bottom:20px;
+}
+/****************************admin.jsp**********************/
+
+.nav_right_link{
+  float:right;
+}
+.user{
+    color:red !important;
+}
+/******************************change_password.jsp***********************/
+#chg_pwd{
+    min-height: 300px;
+    width: 400px;
+    margin: 0 auto;
+}
+#chg_pwd p{
+    margin-top:10px;
+}
+#chg_pwd label,#chg_pwd input{
+    float: left;
+}
+#chg_pwd label{
+     display: block;
+     width: 100px;
+     text-align: right;
+    line-height: 35px;
+    margin-right:10px;
+}
+.form-label {
+  line-height: 40px;
+  text-align: right;
+  white-space: nowrap;
+}
+.input-box {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: white;
+  border-color: #CCCCCC #E2E2E2 #E2E2E2 #CCCCCC;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 1px 2px 3px #F0F0F0 inset;
+  color: #CCCCCC;
+  font-size: 12px;
+  height: 18px;
+  overflow: hidden;
+  padding: 10px 0 8px 8px;
+  vertical-align: middle;
+   width:290px;
+    margin-bottom:11px;
+}
+
+.clearfloat{
+    clear: both;
+}
+/******************************file_list.jsp***********************/
+/********upload_page.jsp*************/
+#mywrapper{
+    padding: 6px;
+    background: white;
+    border: 1px solid #A6C9E2;
+    border-radius:5px;
+}
+#mywrapper .uploadtitle{
+     margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#mywrapper .contentArea{
+  padding:10px;
+}
+#mywrapper #uploadBtnArea{
+    width: 250px;
+    float: left;
+    margin-top: -26px;
+    margin-left: 200px;
+}
+#mywrapper #uploadBtnArea a{
+    background: #626262;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+#mywrapper #uploadBtnArea a:hover{
+    background:#818181;
+}
+
+
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+    margin-left:8px;
+    line-height:20px;
+    height:20px;
+    overflow:hidden;
+    color:#999;
+    font-size:12px;
+}
+.Validform_right{
+    color:#71b83d;
+    padding-left:20px;
+    background:url(../images/right.png) no-repeat left center;
+}
+.Validform_wrong{
+    color:red;
+    padding-left:20px;
+    white-space:nowrap;
+    background:url(../images/error.png) no-repeat left center;
+}
+.Validform_loading{
+    padding-left:20px;
+    background:url(../images/onLoad.gif) no-repeat left center;
+}
+.Validform_error{
+    background-color:#ffe7e7;
+}
+#Validform_msg{color:#7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; background:#fff; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{line-height:25px; height:25px; text-align:left; font-weight:bold; padding:0 8px; color:#fff; position:relative; background-color:#000;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:8px;border:1px solid #000; border-top:none; text-align:left;}
+/*******************change_password.jsp******************************/
+        .changepwd_form {
+            margin-bottom: 40px;
+            font-size: 12px;
+        }
+
+        .changepwd_form input {
+            padding: 8px 20px;
+            vertical-align: middle;
+        }
+
+        .changepwd_form .need {
+            width: 10px;
+            color: #b20202;
+        }
+
+        .changepwd_form td {
+            padding: 5px 0;
+            vertical-align: top;
+            text-align: left;
+            line-height: 38px;
+        }
+
+        .changepwd_form .inputxt, .changepwd_form textarea {
+            border: 1px solid #a5aeb6;
+            width: 196px;
+            padding: 4px 2px;
+        }
+
+        .changepwd_form textarea {
+            height: 75px;
+        }
+
+        .changepwd_form label {
+            margin: 0 15px 0 4px;
+        }
+
+        .changepwd_form .tip {
+            line-height: 20px;
+            color: #5f6a72;
+        }
+
+        .changepwd_form .inputxt,
+        .changepwd_form textarea {
+            padding: 10px;
+            width: 245px;
+        }
+
+        .changepwd_form  .Validform_checktip {
+            display: none;
+            line-height: 38px;
+            height: 38px;
+        }
+
+        .changepwd_form  .Validform_wrong,
+        .changepwd_form  .Validform_right,
+        .changepwd_form .Validform_loading {
+            display: block;
+        }
+
+        .changepwd_form .info {
+            margin-left: 8px;
+            border: 1px solid #ccc;
+            padding: 8px 20px 8px 10px;
+            color: #666;
+            float: left;
+            position: relative;
+            display: none;
+            line-height: 20px;
+        }
+
+        .changepwd_form .dec {
+            top: 9px;
+            display: block;
+            height: 17px;
+            overflow: hidden;
+            position: absolute;
+            left: -8px;
+            width: 8px;
+        }
+
+        .changepwd_form .dec s {
+            font-family: simsun;
+            font-size: 16px;
+            height: 19px;
+            left: 0;
+            line-height: 21px;
+            position: absolute;
+            text-decoration: none;
+            top: 0;
+            width: 17px;
+        }
+
+        .changepwd_form .dec .dec1 {
+            color: #ccc;
+        }
+
+        .changepwd_form .dec .dec2 {
+            color: #fff;
+            left: 1px;
+        }
