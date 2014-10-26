@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!-- ***************资源文件************** -->
+	<context:property-placeholder location="classpath*:dataSourceConfig.properties"/> 
+	<!-- ************** DataSource: dbcp 连接池 ****************-->
+	<bean id="dataSource"   
+	    class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" lazy-init="false">  
+	    <property name="driverClassName" value="${dbcp.driverClassName}"/> 
+	    <property name="url" value="${dbcp.url}"/>  
+	    <property name="username" value="${dbcp.username}"/>
+	    <property name="password" value="${dbcp.password}"/>  
+	    <property name="initialSize" value="${dbcp.initialSize}"/>  
+	    <property name="maxActive" value="${dbcp.maxActive}"/>
+	    <property name="maxIdle" value="${dbcp.maxIdle}"/>
+	    <property name="minIdle" value="${dbcp.minIdle}"/>   
+	    <property name="maxWait" value="${dbcp.maxWait}"/>
+	    <property name="logAbandoned" value="${dbcp.logAbandoned}"/>
+	    <property name="removeAbandonedTimeout" value="${dbcp.removeAbandonedTimeout}"/>
+	    <property name="removeAbandoned" value="${dbcp.removeAbandoned}"/>
+	    <property name="poolPreparedStatements" value="${dbcp.poolPreparedStatements}"/>
+	    <property name="defaultAutoCommit" value="${dbcp.defaultAutoCommit}"/>
+	</bean>
+	
+	<!-- ***************事务配置************** -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<aop:config>  
+        <!-- <aop:advisor pointcut="execution(* cms.sm.service.*.*(..))"  advice-ref="txAdvice" />  -->
+             <aop:advisor pointcut="execution(* service.*.*(..))"  advice-ref="txAdvice" />  
+    </aop:config>  
+  
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">  
+        <tx:attributes>  
+            <tx:method name="get*" read-only="true" />  
+            <tx:method name="query*" read-only="true" />  
+            <tx:method name="find*" read-only="true" />  
+            <tx:method name="load*" read-only="true" />
+            <tx:method name="select*" read-only="true" />  
+            <tx:method name="*" propagation="REQUIRED" rollback-for="Exception" />  
+        </tx:attributes>  
+    </tx:advice>  
+	
+	<!-- MyBatis Mapper.XMl 配置 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+	    <!-- <property name="configLocation" value="/WEB-INF/config/db/MyBatisConfiguration.xml" /> -->
+	    <property name="mapperLocations"  value="classpath*:dao/mapper/*.xml"/> 
+        <!-- <property name="typeAliasesPackage" value="${mybatis.alias.basepackage}" /> -->
+	</bean>
+	
+	<!-- MyBatis 接口编程配置  -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">    
+	    <!-- <property name="basePackage" value="cms.sm.mapper" /> -->
+	    <!-- basePackage指定要扫描的包，在此包之下的映射器都会被搜索到,可指定多个包，包与包之间用逗号或分号分隔-->
+	    <property name="basePackage" value="dao" />
+	    <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+    
+</beans>
+

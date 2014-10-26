@@ -9,4 +9,5 @@ public interface IUserService extends IBaseService{
 	public boolean register(User user);
 
     public boolean isUserExist(String account);
+    public void insertTest() throws Exception;
 }

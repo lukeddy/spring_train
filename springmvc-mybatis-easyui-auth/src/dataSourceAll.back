@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <!-- <context:property-placeholder location="classpath:dataSourceConfig.properties"/> -->   
+    <!--  				DataSource: C3P0连接池             -->
+	<!-- ============================================================ -->
+	<!-- <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	     <property name="driverClass" value="com.mysql.jdbc.Driver"/> 
+         <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/sm"/>
+         <property name="user" value="root"/>
+         <property name="password" value="123456"/>
+         <property name="initialPoolSize" value="8"/>
+         <property name="minPoolSize" value="5" />
+		 <property name="maxPoolSize" value="10" />
+		 <property name="maxIdleTime" value="60" />
+		 <property name="acquireIncrement" value="10" />
+		 <property name="maxStatements" value="100" />
+		 <property name="idleConnectionTestPeriod" value="120" />
+		 <property name="acquireRetryAttempts" value="50" />
+		 <property name="breakAfterAcquireFailure" value="false" />
+		 <property name="testConnectionOnCheckout" value="false" />
+	<property name="driverClass" value="${jdbc.driver.className}" />
+		<property name="jdbcUrl" value="${jdbc.master.url}" />
+		<property name="user" value="${jdbc.master.username}" />
+		<property name="password" value="${jdbc.master.password}" />
+		<property name="initialPoolSize" value="${c3p0.initialPoolSize}" />
+		<property name="minPoolSize" value="${c3p0.minPoolSize}" />
+		<property name="maxPoolSize" value="${c3p0.maxPoolSize}" />
+		<property name="maxIdleTime" value="${c3p0.maxIdleTime}" />
+		<property name="acquireIncrement" value="${c3p0.acquireIncrement}" />
+		<property name="maxStatements" value="${c3p0.maxStatements}" />
+		<property name="idleConnectionTestPeriod" value="${c3p0.idleConnectionTestPeriod}" />
+		<property name="acquireRetryAttempts" value="${c3p0.acquireRetryAttempts}" />
+		<property name="breakAfterAcquireFailure" value="${c3p0.breakAfterAcquireFailure}" />
+		<property name="testConnectionOnCheckout" value="${c3p0.testConnectionOnCheckout}" />
+	 </bean> -->      
+        
+    <!--  				DataSource: dbcp 连接池             -->
+	<!-- ============================================================ -->
+	<bean id="dataSource"   
+	    class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" lazy-init="false">  
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>  
+	    <property name="url" value="jdbc:mysql://127.0.0.1:3306/sm"/>  
+	    <property name="username" value="root"/>  
+	    <property name="password" value="123456"/>  
+	    <property name="initialSize" value="10"/>  
+	    <property name="maxActive" value="30"/>
+	    <property name="maxIdle" value="0"/>
+	    <property name="minIdle" value="5"/>   
+	    <property name="maxWait" value="60000"/>
+	    <property name="logAbandoned" value="true"/>
+	</bean>
+	
+		<!-- ***************配置数据源************** -->
+<!-- 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">	
+		 <property name="driverClassName"><value>com.mysql.jdbc.Driver</value></property> 
+         <property name="url"><value>jdbc:mysql://127.0.0.1:3306/sm</value></property> 
+         <property name="username"><value>root</value></property> 
+         <property name="password"><value>123456</value></property>
+         <property name="driverClassName"><value>${jdbc.driver.className}</value></property> 
+         <property name="url"><value>${jdbc.master.url}</value></property> 
+         <property name="username"><value>${jdbc.master.username}</value></property> 
+         <property name="password"><value>${jdbc.master.password}</value></property>
+	</bean> -->
+</beans>

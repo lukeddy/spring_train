@@ -10,6 +10,9 @@
     }
     //-->
 </script>
+<div>
+    <a href="${contextPath}/testMonitor">测试异常监控</a>
+</div>
 <div id="page">
     <div>
         <c:if test="${not empty message}">

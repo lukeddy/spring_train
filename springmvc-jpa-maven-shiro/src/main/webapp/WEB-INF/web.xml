@@ -3,7 +3,7 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:spring-config.xml,classpath:spring-shiro.xml</param-value>
+        <param-value>classpath:spring-config.xml,classpath:spring-shiro.xml,classpath:spring-monitor.xml</param-value>
     </context-param>
 
     <listener>
