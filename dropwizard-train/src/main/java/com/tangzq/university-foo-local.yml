@@ -1,0 +1,13 @@
+http:
+  port: 8888
+  adminPort: 8889
+
+logging:
+  level: info
+  loggers:
+    "org.surfnet": debug
+    "openjpa": error
+
+template: Hello, %s!
+defaultName: Stranger
+   
