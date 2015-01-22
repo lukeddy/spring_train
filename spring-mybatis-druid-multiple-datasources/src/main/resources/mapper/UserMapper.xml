@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tangzq.mybatis.mapper.UserMapper">
+
+	<!--  
+	<cache />
+	-->
+	
+	<resultMap type="User" id="UserMap2">
+		<result property="id" column="id"/>
+		<result property="userName" column="userName"/>
+		<result property="password" column="password"/>
+		<result property="roleId" column="roleId"/>
+		<result property="trueName" column="trueName"/>
+		<result property="createTime" column="createTime"/>
+		<result property="modifyTime" column="modifyTime"/>
+	</resultMap>
+	
+	<select id="get" parameterType="Integer" resultType="User">
+		SELECT * from t_user where id = #{id}
+	</select>
+	
+	<select id="get2" parameterType="Integer" resultMap="UserMap2">
+		SELECT * from t_user where id = #{id}
+	</select>
+
+	<select id="findAll" resultType="User">
+		SELECT * from t_user
+	</select>
+
+	<insert id="insert" parameterType="User">
+		INSERT INTO t_user (id, userName, password, roleId, trueName, createTime, modifyTime)
+		VALUES (#{id}, #{userName}, #{password}, #{roleId}, #{trueName}, #{createTime}, #{modifyTime})
+	</insert>
+
+</mapper>
