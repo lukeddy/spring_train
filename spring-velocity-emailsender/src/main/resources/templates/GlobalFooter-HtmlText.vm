@@ -1,0 +1,7 @@
+<div>
+    #set ($innerVar = "This is an inner variable")
+    <h3>Copyright &copy; ${companyName} 2013</h3>
+</div>
+</body>
+</html>
+

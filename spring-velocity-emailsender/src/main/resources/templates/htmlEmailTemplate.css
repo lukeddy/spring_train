@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, Helvetica, Arial Unicode MS, Arial, sans-serif;
+    font-size: 10pt;
+    margin: auto;
+    background:#ff4500;
+}
+
+#outer-container {
+    margin: 0 auto;
+    width: 781px;
+    text-align: left;
+}
+
+#header{
+    width: 781px;
+    height: 110px;
+    display: block;
+    margin: 0;
+}
+
+#content {
+    width: 780px;
+    margin-top: 0;
+    padding: 0px 15px 15px ;
+    background:#fff
+}
+
+#footer {
+    background-color: white;
+    padding: 15px 18px;
+    color: #747474;
+}
+
+.top {
+    margin-top: 0;
+}
+
+.alert-footer {
+    color: gray;    
+    font-size: 10pt;
+}
+
+.alert-pdf-link {                   
+    color: red;
+    font-size: 12pt;
+}
+
+.table-top-margin {
+    top-padding: 15px;
+}

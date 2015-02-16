@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>${title}</title>
+    <style type="text/css">
+            #include( ${css} )
+        </style>
+</head>
+<body>
+<div id="outer-container">
+    <img id="header" src="${baseUrl}/qc/photo_auto/photo/38/16/26963816/26963816_950.jpg" width="781px" />
+    <div id="content" width="781px" >
+        <p class="top">This is Global Header</p>
+     </div>
+ </div>

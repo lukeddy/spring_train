@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${subject}</title>
+    <style>
+        *{
+            border:0;
+            margin:0;
+            font-family: arial,sans-serif;
+            font-size: 10.6pt;
+        }
+        #container{
+            width:700px;
+        }
+        #header{
+            height: 88px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        #logo{
+            position: absolute;
+            left:1px;
+            bottom: 1px;
+        }
+        #visionpoint{
+            position: absolute;
+            right: 1px;
+            bottom: 1px;
+        }
+        hr{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #9A9A9A;
+        }
+        #headBox label{
+            font-weight: bold;
+            text-align: left;
+        }
+        #cardBox img{
+            width:600px;
+            height: 450px;
+        }
+        .headLabel{
+            text-align: left;
+            font-weight: bold;
+        }
+        .clear{
+            clear: both;
+            border:0;
+            margin:0;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+      <div id="logoBox">
+          <img id="logo" src="${logoPath}" style="float: left;"/>
+          <img id="visionpoint" src="${visionPointPath}" style="float: right;"/>
+      </div>
+  </div>
+  <p class="clear"></p>
+  <div id="content">
+      <div id="headBox">
+##          <p><label>Alert Number: </label><span>${alert.alertNumber}</span></p>
+##          <p><label>Date / Time:</label><span>${alert.date}</span></p>
+##          <p><label>Subject:</label><span>${alert.subject}</span></p>
+##          <p><label>Distribution:</label><span>${alert.distribution}</span></p>
+          <table>
+              <tr><td class="headLabel">序号: </td>  <td>${alert.alertNumber}</td></tr>
+              <tr><td class="headLabel">时间:</td>    <td>${alert.date}</td></tr>
+              <tr><td class="headLabel">主题:</td>        <td>${alert.subject}</td></tr>
+              <tr><td class="headLabel">详情:</td>   <td>${alert.distribution}</td></tr>
+          </table>
+      </div>
+      <hr/>
+      <div id="textBox">
+          <p class="headLabel">标题</p>
+          <p>${alert.alertText}</p>
+      </div>
+      <hr/>
+      <div id="cardBox">
+          <p class="headLabel">内容</p>
+          <p><img src="${alert.alertCard}"/></p>
+      </div>
+      <hr/>
+  </div>
+  <div id="footer">
+      <div id="contact">
+         <p>${alert.contact}</p>
+      </div>
+  </div>
+</div>
+</body>
+</html>
