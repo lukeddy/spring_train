@@ -1,6 +1,5 @@
 import com.test.email.Alert;
 import com.test.email.EmailSender;
-import com.test.utils.Constants;
 import com.test.utils.DateUtils;
 import org.apache.velocity.app.VelocityEngine;
 import org.junit.Test;
@@ -23,16 +22,58 @@ public class EmailSenderTest extends TestBase {
     private VelocityEngine velocityEngine;
 
     private static final String ENCODING = "UTF-8";
-    private static final String templatePrefix="Test";
+    private static final String FROM_EMAIL ="testaaa123456@163.com";
+    private static final String TO_EMAIL="testaaa123456@163.com";
+
 
     @Test
+    public void testSendSimpleEmail() throws Exception {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("title", "Hello velocity");
+        model.put("content", "It's great to meet you :)");
+        String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
+        emailSender.sendEmail(FROM_EMAIL,TO_EMAIL,null, "Test Email,同步邮件", body);
+    }
+
+    @Test
+    public void testSendSimpleEmailAsync() throws Exception {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("title", "Hello velocity，异步发送邮件标题");
+        model.put("content", "It's great to meet you :)");
+        String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
+        emailSender.sendAsynchronousEmail(FROM_EMAIL, TO_EMAIL, null, "Test Email,异步发送邮件标题", body);
+        //需要添加一个延迟时间，否则还没等发送主线程就结束了
+        Thread.sleep(10000);
+    }
+
+    @Test
+    public void testSendSimpleEmailWithAttachment() throws Exception {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("title", "Hello velocity");
+        model.put("content", "It's great to meet you :)");
+        String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
+        emailSender.sendEmailWithAttachment(FROM_EMAIL, TO_EMAIL,null, "Test email with attachment", body,
+                "C:\\Users\\Administrator\\Desktop\\discover_unusual_pets_competition\\Cover.jpg", "Doge.jpg");
+    }
+    @Test
+    public void testSendSimpleEmailWithAttachmentAsync() throws Exception {
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("title", "Hello velocity");
+        model.put("content", "It's great to meet you :)");
+        String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
+        emailSender.sendAsynchronousEmailWithAttachMent(FROM_EMAIL,TO_EMAIL,null, "Test email with attachment", body,
+                "C:\\Users\\Administrator\\Desktop\\discover_unusual_pets_competition\\Cover.jpg", "Doge.jpg");
+        //需要添加一个延迟时间，否则还没等发送主线程就结束了
+        Thread.sleep(10000);
+    }
+    @Test
     public void testSendEmail() throws Exception {
-        Map<String, String> model = new HashMap<String, String>();
+        Map<String, Object> model = new HashMap<String, Object>();
         model.put("title", "Hello velocity");
         model.put("content", "It's great to meet you :)");
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
         String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
-        emailSender.sendEmail(Constants.TEST_EMAIL, Constants.TEST_EMAIL,cc, "Test Email", body);
+        emailSender.sendEmail(FROM_EMAIL, TO_EMAIL,cc, "Test Email", body);
     }
     @Test
     public void testSendEmail2() throws Exception {
@@ -50,18 +91,18 @@ public class EmailSenderTest extends TestBase {
         model.put("alert",alert);
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test_alert.vm", ENCODING, model);
         String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
-        emailSender.sendEmail(Constants.TEST_EMAIL, Constants.TEST_EMAIL, cc,"Test Email", body);
+        emailSender.sendEmail(FROM_EMAIL, TO_EMAIL, cc,"Test Email", body);
     }
 
     @Test
     public void testSendEmailWithAttachment() throws Exception {
-        Map<String, String> model = new HashMap<String, String>();
+        Map<String, Object> model = new HashMap<String, Object>();
         model.put("title", "Hello velocity");
         model.put("content", "It's great to meet you :)");
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test.vm", ENCODING, model);
         String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
-        emailSender.sendEmailWithAttachment(Constants.TEST_EMAIL, Constants.TEST_EMAIL,cc, "Test email with attachment", body,
-                "X:\\TODOS\\java\\ProgressiveServer\\src\\main\\webapp\\WEB-INF\\images\\alert.jpg", "WEB-INF/images/logo.jpg");
+        emailSender.sendEmailWithAttachment(FROM_EMAIL, TO_EMAIL,cc, "Test email with attachment", body,
+                "C:\\Users\\Administrator\\Desktop\\discover_unusual_pets_competition\\Cover.jpg", "doge.jpg");
     }
     @Test
     public void testSendEmailWithAttachment2() throws Exception {
@@ -80,8 +121,8 @@ public class EmailSenderTest extends TestBase {
         model.put("alert",alert);
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/test_alert.vm", ENCODING, model);
         String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
-        emailSender.sendEmailWithAttachment(Constants.TEST_EMAIL, Constants.TEST_EMAIL,cc, "Test email with attachment", body,
-                "X:\\TODOS\\java\\ProgressiveServer\\src\\main\\webapp\\WEB-INF\\images\\alert.jpg", "WEB-INF/images/logo.jpg");
+        emailSender.sendEmailWithAttachment(FROM_EMAIL, TO_EMAIL,cc, "Test email with attachment", body,
+                "C:\\Users\\Administrator\\Desktop\\discover_unusual_pets_competition\\Cover.jpg", "doge.jpg");
     }
 
     @Test
@@ -106,7 +147,7 @@ public class EmailSenderTest extends TestBase {
         model.put("alert",alert);
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/alert.vm", ENCODING, model);
         String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
-        emailSender.sendEmail(Constants.TEST_EMAIL, Constants.TEST_EMAIL,cc, subject, body);
+        emailSender.sendEmail(FROM_EMAIL, TO_EMAIL,cc, subject, body);
     }
 
     @Test
@@ -129,10 +170,10 @@ public class EmailSenderTest extends TestBase {
 
         model.put("alert",alert);
         String body = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/alert.vm", ENCODING, model);
-        String []cc=new String[]{"testaaa123456@163.com","testaaa123456@163.com"};
+        String []cc=new String[]{"2981025303@qq.com","544301172@qq.com"};
 
-        emailSender.sendEmailWithAttachment(Constants.TEST_EMAIL, Constants.TEST_EMAIL, cc, "Test email with attachment", body,
-                "X:\\TODOS\\java\\ProgressiveServer\\src\\main\\webapp\\WEB-INF\\images\\alert.jpg", "WEB-INF/images/logo.jpg");
+        emailSender.sendEmailWithAttachment(FROM_EMAIL,TO_EMAIL, cc, "Test email with attachment", body,
+                "C:\\Users\\Administrator\\Desktop\\discover_unusual_pets_competition\\Cover.jpg", "doge.jpg");
     }
 
 }
