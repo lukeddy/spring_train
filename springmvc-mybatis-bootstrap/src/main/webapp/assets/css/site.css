@@ -1,0 +1,68 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+a{
+    color: #428BD1;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+p {
+    margin: 0 0 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+h1, h2, h3 {
+    line-height: 35px;
+}
+h2 {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.main-wrapper{
+    width:960px;
+    margin:auto;
+}
+
+#scrollUp {
+    background-image: url("../images/top.png");
+    bottom: 100px;
+    right: 36px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+.parsley-errors-list{
+    padding-left:2px;
+}
+.parsley-required{
+    list-style: none;
+    color:#ff0000;
+    font-size:12px;
+}

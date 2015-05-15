@@ -1,0 +1,58 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <context:component-scan base-package="com.server.service">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
+    </context:component-scan>
+
+    <!--资源数据库-->
+    <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+        <property name="initialSize" value="5"/>
+        <property name="maxIdle" value="5"/>
+        <property name="minIdle" value="3"/>
+        <property name="maxActive" value="40"/>
+        <property name="removeAbandonedTimeout" value="180"/>
+        <property name="maxWait" value="6000"/>
+        <property name="testOnBorrow" value="true"/>
+        <property name="validationQuery" value="select 1" />
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath:mapper/*Mapper.xml" />
+        <property name="typeAliasesPackage" value="com.hengtu.server.model" />
+    </bean>
+    <bean id="baseDao" class="com.server.dao.BaseDao" >
+        <property name="sqlSessionFactory" ref="sqlSessionFactory" />
+    </bean>
+
+    <!--RestTemplate配置-->
+    <bean class="org.springframework.web.client.RestTemplate" id="restTemplate"></bean>
+
+    <!--Log记录-->
+    <bean id="logService" class="com.server.aop.OperationLogService" />
+
+    <aop:config proxy-target-class="true">
+        <aop:aspect id="b" ref="logService">
+            <aop:pointcut id="log" expression="execution(public * com.server.controller.*.*(..))"/>
+            <aop:before pointcut-ref="log" method="before"/>
+            <aop:after pointcut-ref="log" method="after"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!--<bean id ="threadPoolTaskExecutor"  class ="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" >-->
+        <!--<property name="corePoolSize" value="5" />-->
+        <!--<property name="maxPoolSize" value="10" />-->
+    <!--</bean>-->
+</beans>
