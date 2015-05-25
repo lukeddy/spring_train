@@ -82,14 +82,6 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.swf</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.map</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>default</servlet-name>
-        <url-pattern>*.woff2</url-pattern>
-    </servlet-mapping>
 
     <!-- 错误页面映射 -->
     <error-page>
