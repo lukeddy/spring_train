@@ -1,0 +1,1 @@
+var msg_test="this is js message";
