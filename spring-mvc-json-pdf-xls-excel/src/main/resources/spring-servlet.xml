@@ -27,6 +27,7 @@
     </bean>
 
     <!--多视图解析-->
+    <!--ContentNegotiatingViewResolver可以用同样的内容数据来呈现不同的view-->
     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
         <property name="order" value="1"/>
         <property name="mediaTypes">
