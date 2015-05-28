@@ -2,6 +2,7 @@ package com.tangzq.controller;
 
 import com.tangzq.model.Book;
 import com.tangzq.view.ExcelView;
+import com.tangzq.view.PdfView;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -41,9 +42,9 @@ public class POIController {
      * @return
      */
     @RequestMapping(value="/pdf")
-    public ModelAndView exportPdf(){
-
-        return null;
+    public ModelAndView exportPdf(ModelMap model){
+        model.addAttribute("bookList",createBookList());
+        return new ModelAndView(new PdfView(),model);
     }
 
     /**

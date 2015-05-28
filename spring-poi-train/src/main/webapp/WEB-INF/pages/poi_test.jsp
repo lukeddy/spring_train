@@ -11,7 +11,7 @@
 <body>
 <ul>
     <li><a href="${contextPath}/poi/excel">Excel导出</a></li>
-    <li><a href="${contextPath}/i18n/pdf">PDF导出</a></li>
+    <li><a href="${contextPath}/poi/pdf">PDF导出</a></li>
 </ul>
 </body>
 </html>
