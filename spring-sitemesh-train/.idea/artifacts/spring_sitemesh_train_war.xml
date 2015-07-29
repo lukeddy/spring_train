@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="spring-sitemesh-train:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="spring-sitemesh-train.war">
+      <element id="artifact" artifact-name="spring-sitemesh-train:war exploded" />
+    </root>
+  </artifact>
+</component>

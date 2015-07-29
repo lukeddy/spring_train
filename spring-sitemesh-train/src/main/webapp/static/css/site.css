@@ -1,0 +1,26 @@
+body{
+    background:lightseagreen;
+}
+
+.footer-wrapper{
+    background-color:#222;
+    width:100%;
+    height: 100%;
+}
+
+#footer{
+    background-color:#222;
+    width:1140px;
+    height: 300px;
+    margin:auto;
+}
+#footer ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#footer ul li a{
+    display: inline-block;
+    padding:10px;
+    color:#ffffff;
+}
