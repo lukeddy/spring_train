@@ -1,5 +1,4 @@
 import com.tangzq.generator.PdfDocumentGenerator;
-import com.tangzq.tools.ResourceLoader;
 import org.apache.velocity.app.VelocityEngine;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
