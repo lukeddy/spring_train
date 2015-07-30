@@ -1,0 +1,314 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		body {
+			margin-left: 45px;
+			margin-right: 45px;
+			font-family: Arial Unicode MS;
+			font-size: 10px;
+		}
+
+		table {
+			margin: auto;
+			width: 100%;
+			border-collapse: collapse;
+			border: 1px solid #444444;
+		}
+
+		th,td {
+			border: 1px solid #444444;
+			font-size: 10px;
+			margin-left: 5px;
+		}
+		td{
+			padding:10px;
+		}
+
+		.logo {
+			text-align: center;
+		}
+
+		.title {
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.notes {
+			font-weight: normal;
+			margin-left: 5px;
+			margin-right: 5px;
+			line-height: 18px;
+		}
+
+		.text_content {
+			margin-left: 5px;
+			margin-right: 5px;
+			line-height: 18px;
+		}
+
+		.sum_insured_span {
+			font-size: 10px;
+		}
+
+		.special_agreements_div {
+			page-break-before: always;
+			font-size: 14px;
+			margin-top: 20px;
+		}
+
+		.special_agreements_div .special_agreements {
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.title_right {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.title_right p {
+			text-align: left;
+			margin: 0;
+			margin-left: 50%;
+			padding: 0;
+		}
+
+
+		.signature {
+			margin: 0 auto;
+			clear: both;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		.signature_table {
+			/* 	font-size: 16px; */
+			font-weight: bold;
+		}
+		.thumbnail img{
+			width:200px;
+			height:200px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div class="logo">
+		<img src="${logoPath}" />
+	</div>
+	<div class="title">
+		境外紧急救援意外伤害及境外紧急救援医疗保险单 <br /> China Life Overseas Emergency
+		Assistance Accidental Death &amp; <br /> Dismemberment and Medical
+		Insurance Policy
+	</div>
+	<div class="title_right">
+		<p>保单号：${policyNo}</p>
+		<p>Policy No.</p>
+	</div>
+	<div class="notes">
+		开源健康保险股份有限公司按照本保险合同所附条款以及投保单和有关资料的内容，承保下述被保险人的人身保险，特订立本保险单。为
+		便于理解，保险单以中英文写成，如保险单中中英文表达有歧义或冲突，请以中文为准。<br /><br /> China Life Insurance
+		Company Limited underwrites personal insurance for the following
+		insured and issues this policy in accor dance with the Application
+		Form and the terms and conditions of this insurance contract and
+		other relevant materials. The policy is written both in English and
+		Chinese to facilitate your understanding. If any dispute arises out
+		of the interpretation of the policy, the Chinese version shall
+		govern.<br /> <br />投保险种:境外紧急救援意外伤害保险China Life Overseas Emergency
+		Assistance Accidental Death &amp; Dismemberment Insurance<br /><br /> Name
+		of Policy：附加境外紧急救援医疗保险China Life Overseas Emergency Assistance
+		Medical Insurance
+	</div>
+	<div class="thumbnail">
+		<tabel>
+			<tr>
+				<td>
+					<a href="http://www.shikezhi.com">
+						<img src="http://f.hiphotos.baidu.com/image/pic/item/b2de9c82d158ccbf61751a331bd8bc3eb03541e9.jpg" alt="shikezhi.com"/>
+					</a>
+				</td>
+				<td>
+					<a href="http://www.baidu.com" target="_blank">
+						<img src="http://h.hiphotos.baidu.com/image/pic/item/d52a2834349b033bbc09a24d16ce36d3d439bda0.jpg" alt="niao"/>
+					</a>
+				</td>
+			</tr>
+		</tabel>
+	</div>
+
+	<br />
+	<div class="insurance_info">
+		<table class="insurance_info_table" cellpadding="0" cellspacing="0"
+			   width="100%">
+			<tr>
+				<td width="20%" colspan="3">投保人<br /> Policyholder
+				</td>
+				<td width="43%" colspan="3">${holderName}<br /></td>
+				<td width="15%">与被保险人关系<br /> Relationship with the Insured
+				</td>
+				<td >${relation}</td>
+			</tr>
+			<tr>
+				<td width="20%" colspan="3">联络地址<br /> Correspondence Address
+				</td>
+				<td width="43%" colspan="3">${holderAdress}</td>
+				<td width="15%">邮编<br /> Postal Code
+				</td>
+				<td >${holderPostCode}</td>
+			</tr>
+			<tr class="td_width1">
+				<td width="20%" colspan="3">被保险人姓名<br /> Name of the Insured
+				</td>
+				<td width="13%">${holderName}</td>
+				<td width="10%">（拼音）<br /> （Pinyin）
+				</td>
+				<td width="18%">${insuredPingyinName}</td>
+				<td width="15%">护照号码<br /> Passport No
+				</td>
+				<td>${insuredPassportNo}</td>
+			</tr>
+			<tr>
+				<td width="5%">性别<br /> Sex
+				</td>
+				<td width="5%">${insuredSex}</td>
+				<td width="10%">出生日期<br /> Date of Birth
+				</td>
+				<td width="13%">${insuredBirthday}</td>
+				<td width="10%">电话<br /> Telephone No.
+				</td>
+				<td width="18%">${insuredPhone}</td>
+				<td width="15%">证件号码 <br />ID No.</td>
+				<td >${insuredIDNo}</td>
+			</tr>
+			<tr>
+				<td colspan="3">请详细列明前往国家或地区<br /> Destination
+				</td>
+				<td colspan="3">${destination}</td>
+				<td>受益人姓名<br /> Beneficiary
+				</td>
+				<td>${beneficiaryName}</td>
+			</tr>
+			<tr>
+				<td class="address_class" colspan="3">备注 <br /> Remarks
+				</td>
+				<td colspan="5">${remarks}</td>
+			</tr>
+			<tr>
+				<td class="address_class" colspan="3">保险期间 <br /> Insurance
+					period
+				</td>
+				<td colspan="5">${period}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="sum_insured_div">
+			<span class="sum_insured_span text_content">保险金额表 Table of Sum
+				Insured：</span>
+		<table>
+			<tr>
+				<td width="60%">保险责任<br /> Insurance Liability
+				</td>
+				<td width="20%">保险金额<br /> Sum Insured
+				</td>
+				<td>保险费<br /> Premium（RMB）
+				</td>
+			</tr>
+
+			<tr style="line-height: 24px;">
+				<td>境外意外伤害或残疾 Overseas Accidental Death &amp; Disability</td>
+				<td>${accidentalSumInsured}</td>
+				<td rowspan="3">${premium}</td>
+			</tr>
+			<tr style="line-height: 24px;">
+				<td>境外突发急性病身故或残疾 Overseas Acute disease Death &amp;
+					Disability</td>
+				<td>${emergencySumInsured}</td>
+			</tr>
+			<tr style="line-height: 18px;">
+				<td>紧急救援医疗保险金 Emergency Medical Assistance Benefits<br />
+					紧急转移医疗保险金 Emergency Transfer Benefits<br /> 住院医疗保险金
+					Hospitalization Benefits<br /> 转运回国保险金 Repatriation Benefits<br />
+					紧急门诊医疗保险金 Emergency Out - patient Treatment Benefits<br />
+					紧急牙科门诊医疗保险金 Emergency Dental Out-patient Treatment Benefits<br />
+					后事处理保险金 Remains Disposition Benefits
+				</td>
+				<td>${medicalSumInsured}</td>
+			</tr>
+		</table>
+			<span class="text_content">
+				提示：本保险合同由保险单、保险条款、声明、批注以及与本合同有关的投保单、变更申请、体检报告书及其他约定书共同构成。<br />
+			</span> <span class="text_content"> Notes: The entire contract is
+				made up of this Policy and its provisions, the Application
+				statements and endorsements, Policy Alteration Application, physical
+				examination report and other documents and agreements. </span>
+	</div>
+	<div class="signature">
+		<br /> <br />
+		<table class="signature_table" style="border: 0; width: 100%;">
+			<tr>
+				<th
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 17%;">总经理签名：
+					<br /> <span style="font-size:10px">Authorized Signature</span>
+				</th>
+				<td
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 17%;"></td>
+				<th
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 17%;">公司签章：
+					<br /><span style="font-size:10px">Company Stamp</span>
+				</th>
+				<td
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 17%;"></td>
+				<th
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 16%;">签发日期：<br />
+					<span style="font-size:10px">Issue Date</span>
+				</th>
+				<td
+						style="border: 0; font-size: 12px; font-weight: bold; text-align: left; width: 16%;">${issueDate}</td>
+			</tr>
+		</table>
+	</div>
+	<div class="text_content">
+		<br /> 本保险由开源健康保险股份有限公司 ${branchName}省分公司和 ${companyName}
+		有限公司联合承保，您可以通过开源健康客户服务专线00000 查验保险单真伪。当您发生保险事故需要紧急救援时，请立即拨打全球 24
+		小时紧急救援热线 。
+	</div>
+
+	<div class="special_agreements_div">
+		<div class="special_agreements">特别约定：Special Agreements:</div>
+		<br /> 1. 关于该投保要约一切变更、撤销事宜务必于本保险单生效之前（如遇周六、日则提前三天， 法定假日提前八天）到我公司办理。<br />
+		Any change or cancellation in the application offer should be handled
+		at China Life before the Policy comes into effect. (3 days in advance
+		during weekends; 8 days in advance during statutory holidays)<br />
+		办理手续如下：<br /> Handling procedure：<br />
+		（1）退保、变更生效日期、变更保单内容：带投保单、保费发票、至柜台办理。涉及退费的 则还必须携带护照原件，身份证原件办理。<br />
+		(1) In case of policy surrender, change of the effective date or
+		change of policy content, the application form and the premium
+		receipt shall be submitted to the counter. If it involves a refund,
+		the original copy of the passport and the original copy of the ID
+		card are also needed.<br /> ( 签证批准后不办理该项业务) The above- mentioned matter
+		will not be handled if a visa has been approved.<br />
+		（2）如果投保人不能亲自办理，则可由委托人携带本人身份证、委托书及上述事项到柜台办
+		理：或及时发传真到我公司做临时变更手续，待正式时间确定后，被保险人或委托人亲自来 柜台办理。<br /> If the
+		applicant can not handle the above- mentioned matter in person, the
+		trustee may take his/her ID card and the power of attorney to the
+		counter to handle it; the applicant may fax temporary change request
+		to the company, then the insured or the trustee may come to the
+		counter to handle it after the official time is set.<br /> 2. 未满 12
+		周岁的被保险人住院时 1 名随行家长陪住发生的陪同住院费用（或酒店住宿费用） 每日住宿最高 600 元，累计入住以 5 日为限；<br />
+		If an insured aged under 12 years old is hospitalized and accompanied
+		by his/her parents, the accommodation expenditure incurred by one of
+		his/her parents during the accompanying perio d will be reimbursed.
+		The limit of covered expenditure is RMB600 per day with a maximum
+		benefit period of 5 days.<br /> 3. 紧急门诊医疗保险金每次事故 2000 元；<br /> The
+		limit of emergency out- patient treatment benefit is RMB2000 per
+		claim；<br /> 4. 紧急牙科门诊医疗保险金每次事故 2000 元。<br /> The limit of emerge
+		ncy dental out- patient treatment benefit is RMB2000 per claim;<br />
+		5. 后事处理保险金—就地安葬限额 8000 元。<br /> The limit for local burial expense
+		of mortal remains handling is RMB8000. <br />
+	</div>
+</div>
+</body>
+</html>

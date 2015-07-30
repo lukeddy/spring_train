@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvc_poi_html2pdf:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="springmvc_poi_html2pdf.war">
+      <element id="artifact" artifact-name="springmvc_poi_html2pdf:war exploded" />
+    </root>
+  </artifact>
+</component>
