@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <decorators defaultdir="/WEB-INF/pages">
+    <decorator name="blank" page="layouts/blank.jsp">
+        <pattern>/front/*</pattern>
+    </decorator>
     <decorator name="standard" page="layouts/standard.jsp">
         <pattern>/*</pattern>
     </decorator>

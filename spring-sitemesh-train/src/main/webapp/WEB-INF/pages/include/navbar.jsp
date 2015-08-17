@@ -13,6 +13,7 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="${ctx}/">首页</a></li>
+        <li><a href="${ctx}/front/test">sitemesh测试页面2</a></li>
         <li><a href="${ctx}/poi/">POI示例</a></li>
         <li><a href="${ctx}/i18n/">i18n示例</a></li>
         <li><a href="#about">关于</a></li>
