@@ -1,0 +1,175 @@
+<html>
+<head>
+    <title>Evernote Export</title>
+    <basefont face="Tahoma" size="2"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="exporter-version" content="Evernote Windows/276152; Windows/6.1.7601 Service Pack 1;"/>
+    <style>
+        body, td {
+            font-family: Tahoma;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+<a name="9802"/>
+
+<div>
+<span style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><div
+        style="text-align: center;font-size: 21px;"><span
+        style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><b>zookeeper集群搭建</b></span>
+</div><div style="font-size: 16px;"><span
+        style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><br/></span>
+</div><div style="text-align: left; widows: 1; font-size: 16px;"><font face="Microsoft YaHei"><span
+        style="line-height: 26px;"><b>环境与软件：</b></span></font></div><div
+        style="text-align: left; widows: 1; font-size: 16px;">
+    <div style="text-align: -webkit-auto; widows: 2;">        系统环境准备，三台Linux主机：</div>
+    <div style="text-align: -webkit-auto; widows: 2;">        <i>192.168.10.159  centos6.5</i></div>
+    <div style="text-align: -webkit-auto; widows: 2;"><i>        192.168.1.253    redhat 6</i></div>
+    <div style="text-align: -webkit-auto; widows: 2;"><i>        192.268.1.254    redhat 6</i></div>
+    <div style="text-align: -webkit-auto; widows: 2;"><br/></div>
+    <div style="text-align: -webkit-auto; widows: 2;">        软件：</div>
+    <div style="text-align: -webkit-auto; widows: 2;">        <i>JDK1.7,zookeeper-3.4.6</i></div>
+</div><div style="font-size: 16px;"><span
+        style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><span
+        style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><br/></span></span>
+</div><div style="font-size: 16px;"><b>zookeeper集群搭建步骤：</b></div><div style="font-size: 16px;"><br/></div><div
+        style="font-size: 16px;"><b>1.下载JDK7、搭建Java环境并配置环境变量（这里就不详说JDK的安装步骤了）</b></div><div style="font-size: 16px;"><b><br/></b>
+</div><span style="font-size: 16px;"><b>2.官方网站下载zookeeper-3.4.6</b></span><div style="font-size: 16px;"><i>#cd /tmp</i>
+</div><div style="font-size: 16px;"><i>#wget <a
+        href="http://mirrors.cnnic.cn/apache/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz">http://mirrors.cnnic.cn/apache/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz</a> </i>
+</div><div><br style="font-size: 16px;"/>
+
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><b>3.解压zookeeper     </b></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><i>#tar -zxvf zookeeper-3.4.6.tar.gz</i></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><br/></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><br/></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><b>4.将解压后的zookeeper放到指定目录</b></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">主机：192.168.10.159</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">#mv zookeeper-3.4.6 /home/tangzhiqiang/dev</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">主机：192.168.1.253</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">#mv zookeeper-3.4.6 /home/dev</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">主机：192.168.1.254</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">#mv zookeeper-3.4.6 /home/dev</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><br/></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><b>5.修改zoo.cfg文件，这里以（192.168.10.159）环境为例，其他机器的zookeeper配置一样</b>
+    </div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">进入到zookeeper-3.4.6的conf目录下</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><i>#cd /home/tangzhiqiang/dev/zookeeper-3.4.6</i>
+    </div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><i>#cp zoo_sample.cfg zoo.cfg</i></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><i>#vi zoo.cfg</i></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><i><br/></i></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">文件内容如下（<b><u>黑体加粗为主要配置项</u></b>）：</div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">
+        ======================================================
+    </div>
+    <div style="text-align: -webkit-auto; widows: 2;"><i># The number of milliseconds of each
+        tick<br/><b>tickTime=2000</b><br/>
+        # The number of ticks that the initial<br/>
+        # synchronization phase can take<br/><b>initLimit=10</b><br/>
+        # The number of ticks that can pass between<br/>
+        # sending a request and getting an acknowledgement<br/><b>syncLimit=5</b><br/>
+        # the directory where the snapshot is stored.<br/>
+        # do not use /tmp for storage, /tmp here is just<br/>
+        # example sakes.<br/>
+        dataDir=/home/tangzhiqiang/dev/zookeeper<br/>
+        # the port at which the clients will connect<br/><b>clientPort=2181</b><br/><br/>
+        #master and node config<br/><b>server.1=192.168.10.159:2888:3888<br/>
+            server.2=192.168.1.253:2888:3888<br/>
+            server.3=192.168.1.254:2888:3888</b><br/>
+        # the maximum number of client connections.<br/>
+        # increase this if you need to handle more clients<br/>
+        #maxClientCnxns=60<br/>
+        #<br/>
+        # Be sure to read the maintenance section of the<br/>
+        # administrator guide before turning on autopurge.<br/>
+        #<br/>
+        # http://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_maintenance<br/>
+        #<br/>
+        # The number of snapshots to retain in dataDir<br/>
+        #autopurge.snapRetainCount=3<br/>
+        # Purge task interval in hours<br/>
+        # Set to &quot;0&quot; to disable auto purge feature<br/>
+        #autopurge.purgeInterval=1</i></div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;">
+        ==========================================================
+    </div>
+    <div style="text-align: -webkit-auto; widows: 2; font-size: 16px;"><br/></div>
+    <div style="text-align: left; widows: 1; font-size: 16px;"><font color="#464646"><span
+            style="text-align: -webkit-auto; widows: 2;">备注：配置完后可以启动zookeeper，为了自动创建dataDir(zoo.cfg中配置的路径),不然启动前要手动创建dataDir,方面myid的创建。 </span><span
+            style="background-color: rgb(255, 255, 255); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px;">端口2181，设置dataDir为一个指定目录存放zookeeper的协调数据，最后添加集群中的节点。</span></font>
+    </div>
+    <div style="text-align: left; widows: 1; font-size: 16px;"><font color="#464646"><span
+            style="background-color: rgb(255, 255, 255); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px;"><br/></span></font>
+    </div>
+    <div style="text-align: left; widows: 1; font-size: 16px;"><b><font color="#464646"><span
+            style="background-color: rgb(255, 255, 255); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px;">6.设置myid</span></font></b>
+    </div>
+    <div style="text-align: left; widows: 1; font-size: 16px;"><font color="#464646"><span
+            style="background-color: rgb(255, 255, 255); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px;">根据zoo.cfg中server.X的号码在相应的节点上的dataDir下建立myid文件，输入自身的“X”作为内容即可，比如</span></font><font
+            color="#328712">192.168.10.159节点的myid输入1即可,192.168.1.253节点的myid输入2即可...</font></div>
+    <div style="text-align: left; widows: 1; font-size: 16px;"><font color="#464646"><span
+            style="background-color: rgb(255, 255, 255); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px;"><br/></span></font>
+    </div>
+    <div style="font-size: 16px;"><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><b>7.设置zookeeper环境变量：</b></span><br
+            style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"/><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">     为了方便运行zkServer.sh脚本，我们将zookeeper的bin路径加入到/etc/profile中，作为一个全局变量进行输出到PATH中，记得修改完成之后运行source /etc/profile使修改生效，这里以主机192.168.10.159配置为例，其他主机配置类似：</span>
+    </div>
+    <div style="font-size: 16px;"><i><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">     </span><span
+            style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">#sudo vi /etc/profile</span></i>
+    </div>
+    <div style="font-size: 16px;"><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><i> 
+             添加内容如下：</i></span></div>
+    <div style="font-size: 16px;"><i><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">      </span><span
+            style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">export </span><span
+            style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">ZOOKEEPER_HOME=/home/tangzhiqiang/dev/zookeeper-3.4.6</span> <br
+            style="word-wrap: break-word; font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"/><span
+            style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">      export PATH=$ZOOKEEPER_HOME/bin:</span><span
+            style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">$PATH</span> </i>
+    </div>
+    <div style="font-size: 16px;"><i>       </i></div>
+    <div>
+        <div style="font-size: 16px; text-align: -webkit-auto; widows: 2;"><i>      #sudo source /etc/profile</i></div>
+        <div style="font-size: 16px; text-align: -webkit-auto; widows: 2;"><br/></div>
+        <span style="font-size: 19px;"><b>8.重复上边步骤配置另外两台(192.168.1.253,192.168.1.254)的zookeeper环境</b></span></div>
+    <div style="font-size: 16px;">
+        <div style="text-align: -webkit-auto; widows: 2;"><br/></div>
+        <div style="text-align: -webkit-auto; widows: 2;"><br/></div>
+        <span style="font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"><b>9.运行zkServer.sh </b></span><br
+            style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"/><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">  在所有节点上分别运行zkServer.sh start命令：</span>
+    </div>
+    <div style="font-size: 16px;">  <img src="images/img.png" type="image/png" style="cursor: default;"/><br
+            style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"/>
+          <br style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"/><span
+                style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);"> 这里需要注意第一个节点启动zookeeper时由于集群的其他节点未启动zookeeper，因此使用zkServer.sh status命令查看当前状态时会提示错误，如图所示：</span>
+    </div>
+    <div style="font-size: 16px;"><img src="images/img1.png" type="image/png"
+                                       style="cursor: default;"/></div>
+    <div style="font-size: 16px;"><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255);">但是随着后续节点的zookeeper的陆续启动，使用status查看状态时会显示当前节点的状态，本次192.168.1.253被选为了leader，宁外两台被选为了follower，如图：</span>
+    </div>
+    <div style="font-size: 16px;"><img src="images/img2.png" type="image/png"
+                                       style="cursor: default;"/></div>
+    <div style="font-size: 16px;"><br/></div>
+    <div style="font-size: 16px;"><img src="images/img3.png" type="image/png"
+                                       style="cursor: default;"/></div>
+    <div style="font-size: 16px;"><br/></div>
+    <div style="font-size: 16px;"><br/></div>
+    <div style="font-size: 16px;"><img src="images/img4.png" type="image/png"
+                                       style="cursor: default;"/></div>
+    <div style="font-size: 16px;"><br/></div>
+    <div><br
+            style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255); font-size: 16px;"/><span
+            style="color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255); font-size: 16px;"> 这样zookeeper集群环境搭建完毕。</span><br
+            style="word-wrap: break-word; color: rgb(102, 102, 102); font-family: &apos;Microsoft YaHei&apos;; line-height: 26px; text-align: left; widows: 1; background-color: rgb(255, 255, 255); font-size: 16px;"/><br/>
+    </div>
+</div></span>
+</div>
+</body>
+</html> 

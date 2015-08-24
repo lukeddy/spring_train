@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userMapper">
+
+    <select id="findAll" resultType="com.server.model.User">
+        select * from t_user
+    </select>
+
+    <select id="isUserExist" resultType="com.server.model.User">
+      select * from t_user where username=#{username} and pwd=#{pwd}
+    </select>
+
+    <select id="isUserNameExist" resultType="com.server.model.User">
+        select * from t_user where username=#{username}
+    </select>
+
+    <select id="findUserByUserName" parameterType="java.lang.String" resultType="com.server.model.User">
+        select * from t_user where username=#{username}
+    </select>
+
+    <insert id="insert" parameterType="com.server.model.User" >
+        insert into t_user (username, pwd, role)
+        values (#{username,jdbcType=VARCHAR}, #{pwd,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER})
+    </insert>
+
+    <update id="updatePwd" parameterType="map" >
+        update t_user
+        set pwd = #{pwd,jdbcType=VARCHAR}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateLockState" parameterType="map" >
+        update t_user
+        set lockState = #{lockState,jdbcType=INTEGER}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <update id="updateLastLoginTime" parameterType="map" >
+        update t_user
+        set lastLoginTime = #{lastLoginTime,jdbcType=DATE}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+
+</mapper>
