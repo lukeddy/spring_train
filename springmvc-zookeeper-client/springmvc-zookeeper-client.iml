@@ -75,5 +75,7 @@
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
     <orderEntry type="library" name="Maven: com.google.guava:guava:16.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-x-discovery:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:2.8.0" level="project" />
   </component>
 </module>

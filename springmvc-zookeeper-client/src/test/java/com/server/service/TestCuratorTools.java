@@ -30,7 +30,7 @@ public class TestCuratorTools extends TestBase {
             List<String> nodeList=curatorTools.getRootChildren();
             Assert.notNull(nodeList);
             for(String s:nodeList){
-                System.out.println(s);
+                System.out.println(s+":"+curatorTools.readNode("/"+s));
             }
         } catch (Exception e) {
             e.printStackTrace();

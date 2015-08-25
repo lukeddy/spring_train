@@ -157,7 +157,7 @@ public class TestCuratorFramework {
         zkclient.close();
     }
 
-    public static void main(String[] args)throws Exception {
+    //public static void main(String[] args)throws Exception {
         //TestCuratorTools ct=new  TestCuratorTools();
         //ct.getListChildren("/zk/bb");
         //ct.upload("/jianli/123.txt", "D:\\123.txt");
@@ -166,5 +166,5 @@ public class TestCuratorFramework {
         //ct.checkExist("/zk");
         //ct.read("/jianli/123.txt");
         //zkclient.close();
-    }
+    //}
 }

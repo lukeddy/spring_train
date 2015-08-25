@@ -1,10 +1,16 @@
 package com.server.controller;
 
 import com.server.service.MyService;
+import com.server.tools.CrudExample;
+import com.server.tools.ZKManager;
+import org.codehaus.jackson.map.util.JSONPObject;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.List;
 
 /**
  * 主面板控制器
@@ -23,4 +29,19 @@ public class HomeController extends BaseController {
         return "welcome";
     }
 
+    @RequestMapping(value="/registerNode")
+    public String register(){
+        ZKManager.register("66.66.66.66");
+        return "welcome";
+    }
+
+    @RequestMapping(value="/getServerList")
+    @ResponseBody
+    public List<String> getServerList(){
+
+
+        return null;
+    }
+
 }
+

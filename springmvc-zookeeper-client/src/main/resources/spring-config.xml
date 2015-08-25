@@ -21,7 +21,7 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Service" />
     </context:component-scan>
 
-    <bean id="curatorTools" class="com.server.tools.CuratorTools"/>
+    <!--<bean id="curatorTools" class="com.server.tools.CuratorTools"/>-->
 
     <!--Log记录-->
     <!--<bean id="logService" class="com.server.aop.OperationLogService" />-->

@@ -4,6 +4,7 @@ import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
+import org.apache.zookeeper.CreateMode;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -38,6 +39,17 @@ public class CuratorTools {
         zkClient.start();// 放在这前面执行
         zkClient.newNamespaceAwareEnsurePath(configZKParentPath);
         logger.info("====================创建ZK客户端对象完成====================");
+    }
+
+
+    /**
+     * 创建节点
+     * @param nodePath
+     * @param content
+     * @throws Exception
+     */
+    public void createNodeWithEPHEMERAL(String nodePath,String content) throws Exception {
+        zkClient.create().withMode(CreateMode.EPHEMERAL).forPath(nodePath, content.getBytes());
     }
 
     /**
