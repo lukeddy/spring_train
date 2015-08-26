@@ -8,8 +8,12 @@ import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 /**
@@ -30,17 +34,23 @@ public class HomeController extends BaseController {
     }
 
     @RequestMapping(value="/registerNode")
-    public String register(){
-        ZKManager.register("66.66.66.66");
-        return "welcome";
+    public void register(
+            String nodeValue,
+            HttpServletResponse response
+    ){
+        ZKManager.getInstance().registerNode(nodeValue);
+        try {
+            PrintWriter out=response.getWriter();
+            out.print("success");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @RequestMapping(value="/getServerList")
     @ResponseBody
     public List<String> getServerList(){
-
-
-        return null;
+        return ZKManager.getInstance().getNodeValueList();
     }
 
 }

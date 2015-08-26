@@ -22,9 +22,9 @@ public class CrudExample {
      */
     public static void main(String[] args) {
         String conString="192.168.1.253:2181,192.168.10.159:2181,192.168.1.254:2181";
-        String namespace="templist";
+        String namespace="MessageServers";
         String myNode="/tempnode";
-        CuratorFramework zkClient=CrudExample.createWithOptions(conString,namespace, new ExponentialBackoffRetry(1000, 3), 1000, 1000);;
+        CuratorFramework zkClient=CrudExample.createWithOptions(conString,namespace, new ExponentialBackoffRetry(1000, 3), 1000, 1000);
         try{
             zkClient.start();// 放在这前面执行
             zkClient.newNamespaceAwareEnsurePath("/" + namespace);
@@ -33,8 +33,8 @@ public class CrudExample {
             for(int i=1;i<=10;i++){
                 CrudExample.createNodeWithModeAndTransaction(zkClient, CreateMode.EPHEMERAL, "/tempnode"+i, "temp node value"+i);
             }
-            Thread.sleep(30000);
-            if(CrudExample.checkNodeExist(zkClient,"/templist/tempnode3")){
+            Thread.sleep(10000);
+            if(CrudExample.checkNodeExist(zkClient,"/MessageServers/tempnode3")){
                 System.out.println("节点存在");
             }else{
                 System.out.println("节点不存在");
