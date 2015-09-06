@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- 可选的Bootstrap主题文件（一般不用引入） -->
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -25,24 +29,13 @@
     <br/>
     <br/>
     <p>
-        <a href="javascript:void(0);" class="btn btn-primary" id="showDialog">显示弹出框</a>
-        <a href="${ctx}/testAlertBox" class="btn btn-primary">示例2</a>
+        <a href="${ctx}/" class="btn btn-default">返回首页</a>
+        <a href="javascript:void(0);" class="btn btn-success" id="showDialog">点我有惊喜</a>
     </p>
     <div id="modelbox" class="row">
-        <sys:alertbox id="myMsgBox" content="Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。" type="success"/>
+        <sys:alert dialogID="myMsgBox" content="Spring是一个牛逼的框架，jQuery是一个牛逼的框架，Bootstrap也是个牛逼的框架" btnID="showDialog"/>
     </div>
 </div>
 
 </body>
 </html>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $('#showDialog').on("click",function(){
-            $("#myMsgBox").modal("show");
-        });
-    });
-</script>

@@ -17,4 +17,9 @@ public class HomeController {
     public String index(){
         return "index";
     }
+
+    @RequestMapping(value="/testAlertBox")
+    public String testAlertBox(){
+        return "test";
+    }
 }
