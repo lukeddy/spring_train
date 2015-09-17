@@ -1,8 +1,8 @@
 package com.tangzq.utils;
 
 /**
- * ³£Á¿·â×°Àà
+ * å¸¸é‡å·¥å…·ç±»
  */
 public class Constant {
-    public static final String LOCAL_UPLOADER_FOLDER="upload";
+    public static final String UPLOAD_FOLDER ="upload";
 }
