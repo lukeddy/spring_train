@@ -18,6 +18,10 @@
             height:30px;
             margin:3px;
         }
+        .copy-msg{
+            font-size: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -52,10 +56,27 @@
                              <tr>
                                  <th>已上传图片</th>
                                  <th>图片地址</th>
+                                 <th>操作</th>
                              </tr>
                              <tr>
-                                 <td><img src=""  class="uploaded-photo"/></td>
-                                 <td>图片地址</td>
+                                 <td><img src="http://img.fotor.mobi/guidance/images/3_1.jpg"  class="uploaded-photo"/></td>
+                                 <td>http://img.fotor.mobi/guidance/images/3_1.jpg</td>
+                                 <td>
+                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://www.taobao.com">
+                                         <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                                     </a>
+                                     <span class="copy-msg"></span>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td><img src="http://img.fotor.mobi/guidance/images/3_1.jpg"  class="uploaded-photo"/></td>
+                                 <td>http://img.fotor.mobi/guidance/images/3_1.jpg</td>
+                                 <td>
+                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://www.baidu.com">
+                                         <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                                     </a>
+                                     <span class="copy-msg"></span>
+                                 </td>
                              </tr>
                          </table>
                      </div>
@@ -88,6 +109,7 @@
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="${contextPath}/static/js/wangeditor/wangEditor-1.3.9.min.js"></script>
 <script src="${contextPath}/static/js/webuploader-0.1.5/webuploader.min.js"></script>
+<script src="${contextPath}/static/js/zeroclipboard-2.2.0/ZeroClipboard.min.js"></script>
 <script type="text/javascript">
     $(function(){
         //初始化Editor
@@ -101,13 +123,15 @@
      PREVIEW_URL="${contextPath}/preview",
      WEB_UPLOADER_PATH="${contextPath}/static/js/webuploader-0.1.5",
      SWF_PATH=BASE_URL+"/static/js/webuploader-0.1.5/Uploader.swf",
-     uploader;
+     uploader,
+     copyClient;
 </script>
 <%--<script src="${contextPath}/static/js/myuploader.js"></script>--%>
 <script>
 
     $(function(){
-        initWebUploader(SWF_PATH,SERVER_UPLOAD_URL,PARAM_NAME)
+        initWebUploader(SWF_PATH,SERVER_UPLOAD_URL,PARAM_NAME);
+        initZeroClipboard();
     });
 
     /**
@@ -195,4 +219,27 @@
         //});
     }
 
+    /**
+    *初始化拷贝组件
+     */
+    function initZeroClipboard(){
+        ZeroClipboard.config( { swfPath: BASE_URL+"/static/js/zeroclipboard-2.2.0/ZeroClipboard.swf" } );
+        copyClient = new ZeroClipboard($('.btn-copy-link'));
+        copyClient.on("ready",function(){
+            copyClient.on("copy",function(event){
+                //console.log(event.target);
+                //alert("开始拷贝");
+                $('.copy-msg').empty();
+                copyClient.setData("text/plain",$(event.target).attr("data-link"));
+            });
+            copyClient.on("aftercopy",function(event){
+                //alert("拷贝完成");
+                $(event.target).parent().find('.copy-msg').html("复制成功!");
+            });
+        });
+        copyClient.on("error", function() {
+            ZeroClipboard.destroy();
+            $('.copy-msg').empty();
+        });
+    }
 </script>
