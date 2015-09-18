@@ -21,6 +21,9 @@
         .copy-msg{
             font-size: 10px;
             font-weight: bold;
+            display: inline-block;
+            width: 66px;
+            text-align:center;
         }
     </style>
 </head>
@@ -239,7 +242,7 @@
         });
         copyClient.on("error", function() {
             ZeroClipboard.destroy();
-            $('.copy-msg').empty();
+            $('.copy-msg').html("出错了，无法使用拷贝功能!");
         });
     }
 </script>
