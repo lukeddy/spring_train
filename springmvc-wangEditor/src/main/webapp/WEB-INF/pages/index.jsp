@@ -194,14 +194,24 @@
         uploader.on( 'uploadSuccess', function( file,response) {
             if (response.status) {
                     console.log(response);
+                    //将服务器端返回图片地址放到已上传列表中
                     var uploadedPhotoURL=BASE_URL+response.data;
                     var html='<tr>';
                         html+='<td><img src="'+uploadedPhotoURL+'"  class="uploaded-photo"/></td>';
                         html+='<td>'+uploadedPhotoURL+'</td>';
+                        html+=' <td>';
+                        html+=' <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="'+uploadedPhotoURL+'">';
+                        html+='<i class="glyphicon glyphicon-link"></i>拷贝图片地址';
+                        html+='</a>';
+                        html+='<span class="copy-msg"></span>';
+                        html+='</td>';
                         html+='</tr>';
                     $('#uploadedPhotoTable').append(html);
-                   //TODO 移除已上传文件
+
+                   //移除已上传文件
                    $('#thelist').find('#photo-item'+file.id).remove();
+                   //重新初始化拷贝组件
+                   initZeroClipboard();
             }else{
                 $("#errormsg").html(response.msg);
                 $("#thelist").html("");
@@ -227,6 +237,7 @@
      */
     function initZeroClipboard(){
         ZeroClipboard.config( { swfPath: BASE_URL+"/static/js/zeroclipboard-2.2.0/ZeroClipboard.swf" } );
+        ZeroClipboard.destroy();
         copyClient = new ZeroClipboard($('.btn-copy-link'));
         copyClient.on("ready",function(){
             copyClient.on("copy",function(event){
