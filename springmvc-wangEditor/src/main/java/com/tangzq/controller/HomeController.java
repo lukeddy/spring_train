@@ -26,6 +26,7 @@ import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -37,10 +38,7 @@ import java.util.UUID;
  */
 @Controller
 public class HomeController {
-
-
     public static final Logger logger = LoggerFactory.getLogger(HomeController.class);
-
     @Autowired
     private ContentService contentServicer;
 
@@ -56,18 +54,37 @@ public class HomeController {
         return "index";
     }
 
+    @RequestMapping(value="/preview",method = RequestMethod.POST)
+    public void preview(
+            FormDataVO formDataVO,
+            HttpServletRequest request,
+            HttpServletResponse response
+    ){
+        try {
+            String filename=System.currentTimeMillis()+".html";
+            String filePath=getFullPath4Upload(filename);
+            String newContent=contentServicer.combineContent(formDataVO.getContent());
+            if(null!=newContent){
+                FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
+                String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
+                //生成预览地址
+                String previewURL=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
+            }else{
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @RequestMapping(value="/saveData",method = RequestMethod.POST)
     public String saveFormData(
         FormDataVO formDataVO,
         ModelMap model
     ){
-        System.out.println("title:"+formDataVO.getTitle());
         System.out.println("content:" + formDataVO.getContent());
-
         model.addAttribute("fd", formDataVO);
         model.addAttribute("appName", contentServicer.getAppName());
-
-
         try {
             String filename=System.currentTimeMillis()+".html";
             String filePath=getFullPath4Upload(filename);
@@ -114,6 +131,7 @@ public class HomeController {
                 json.setStatus(Boolean.TRUE);
                 json.setMsg("保存图片成功");
                 json.setData(savedURI);
+                //TODO 将会话期内的图片保存到session中，方便下次重复利用
             }else{
                 json.setStatus(Boolean.FALSE);
                 json.setMsg("图片不能为空");

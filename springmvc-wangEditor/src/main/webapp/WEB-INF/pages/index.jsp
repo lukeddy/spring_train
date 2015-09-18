@@ -32,8 +32,8 @@
 <h3 class="page-header text-center">Hello ${appName}</h3>
 <hr/>
  <div class="container">
+     <form id="myForm" action="${contextPath}/saveData" method="post">
      <div class="row">
-
          <table class="table">
              <caption>
                  <p><b>生成页面地址：</b><a href='<c:url value="${previewURI}"/> ' target="_blank">${previewURI}</a></p>
@@ -86,10 +86,6 @@
                  </td>
              </tr>
              <tr>
-                 <td><label for="title">标题</label></td>
-                 <td><input type="text" class="form-input" name="title" id="title" value="${fd.title}" placeholder="文章标题"/></td>
-             </tr>
-             <tr>
                  <td><label for="content">文章内容</label></td>
                  <td>
                        <textarea name="content" id='content' style='height:500px; width:100%;'>
@@ -102,8 +98,11 @@
      <br/>
      <div class="form-group">
          <button type="submit" class="btn btn-primary">提交</button>
-         <button type="button" class="btn btn-default">预览</button>
+         <button type="button" class="btn btn-default" id="btnPreview">预览</button>
      </div>
+     </form>
+     <form action="${contextPath}/preview" id="previewForm" method="post" target="_blank">
+         <input type="hidden" name="content" value=""/>
      </form>
  </div>
 </body>
@@ -113,28 +112,29 @@
 <script src="${contextPath}/static/js/wangeditor/wangEditor-1.3.9.min.js"></script>
 <script src="${contextPath}/static/js/webuploader-0.1.5/webuploader.min.js"></script>
 <script src="${contextPath}/static/js/zeroclipboard-2.2.0/ZeroClipboard.min.js"></script>
-<script type="text/javascript">
+<script>
+    //定义全局变量
+    var BASE_URL="${contextPath}",
+            SERVER_UPLOAD_URL="${contextPath}/doUploadPhoto",
+            PARAM_NAME="photoFile",
+            PREVIEW_URL="${contextPath}/preview",
+            WEB_UPLOADER_PATH="${contextPath}/static/js/webuploader-0.1.5",
+            SWF_PATH=BASE_URL+"/static/js/webuploader-0.1.5/Uploader.swf",
+            uploader,
+            copyClient;
+
     $(function(){
         //初始化Editor
         var editor = $('#content').wangEditor();
-    });
-</script>
-<script>
-    var BASE_URL="${contextPath}",
-     SERVER_UPLOAD_URL="${contextPath}/doUploadPhoto",
-     PARAM_NAME="photoFile",
-     PREVIEW_URL="${contextPath}/preview",
-     WEB_UPLOADER_PATH="${contextPath}/static/js/webuploader-0.1.5",
-     SWF_PATH=BASE_URL+"/static/js/webuploader-0.1.5/Uploader.swf",
-     uploader,
-     copyClient;
-</script>
-<%--<script src="${contextPath}/static/js/myuploader.js"></script>--%>
-<script>
-
-    $(function(){
+        //初始化上传组件
         initWebUploader(SWF_PATH,SERVER_UPLOAD_URL,PARAM_NAME);
+        //初始化复制组件
         initZeroClipboard();
+        //预览按妞事件
+        $('#btnPreview').on("click",function(){
+            $('#previewForm').find('input[name="content"]').val($('#content').val());
+            $('#previewForm').submit();
+        });
     });
 
     /**
