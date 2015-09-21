@@ -65,7 +65,7 @@
                                  <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
                                  <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
                                  <td>
-                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://www.taobao.com">
+                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
                                          <i class="glyphicon glyphicon-link"></i>拷贝图片地址
                                      </a>
                                      <span class="copy-msg"></span>
@@ -75,7 +75,7 @@
                                  <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
                                  <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
                                  <td>
-                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://www.baidu.com">
+                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
                                          <i class="glyphicon glyphicon-link"></i>拷贝图片地址
                                      </a>
                                      <span class="copy-msg"></span>

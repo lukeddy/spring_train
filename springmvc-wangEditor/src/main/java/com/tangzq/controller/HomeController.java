@@ -68,9 +68,11 @@ public class HomeController {
                 FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
                 String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
                 //生成预览地址
-                String previewURL=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
+                String previewURL=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+previewURI;
+                String goToPage="<!DOCTYPE html><meta http-equiv='refresh' content='0; url="+previewURL+"'/>";
+                IOUtils.write(goToPage,response.getWriter());
             }else{
-
+                IOUtils.write("empty page",response.getWriter());
             }
         } catch (IOException e) {
             e.printStackTrace();
