@@ -49,7 +49,6 @@
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
-     <hr/>
      <p class="area">
          <span class="area-title"> <b>图片管理区>></b> </span>
          <a href="javascript:void(0);" class="btn btn-link pull-right" style="color:#099ad0;margin-top:-7px;" data-value="zhankai" id="btnToggleUploadBox">收起</a>
@@ -72,15 +71,15 @@
              <table class="table table-condensed" id="uploadedPhotoTable">
                  <thead>
                  <tr>
-                     <th>图片</th>
                      <th>图片地址</th>
+                     <th>图片</th>
                      <th>操作</th>
                  </tr>
                  </thead>
                  <tbody>
                  <tr>
-                     <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
                      <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
+                     <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
                      <td>
                          <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
                              <i class="glyphicon glyphicon-link"></i>拷贝图片地址
@@ -89,8 +88,8 @@
                      </td>
                  </tr>
                  <tr>
-                     <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
                      <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
+                     <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
                      <td>
                          <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
                              <i class="glyphicon glyphicon-link"></i>拷贝图片地址
@@ -102,17 +101,16 @@
              </table>
          </div>
      </div>
-     <hr/>
      <p class="area">
          <span><b>内容编辑区>></b></span>
      </p>
      <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
-         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="100%"></iframe>
+         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="800"></iframe>
      </div>
      <div class="col-md-9">
          <form id="myForm" action="${contextPath}/saveData" method="post">
              <p>
-                 <textarea name="content" id='content' style='height:500px; width:100%;'>
+                 <textarea name="content" id='content' style='height:800px; width:100%;'>
                      ${fd.content}
                  </textarea>
              </p>
@@ -252,8 +250,8 @@
                     //将服务器端返回图片地址放到已上传列表中
                     var uploadedPhotoURL=BASE_URL+response.data;
                     var html='<tr>';
-                        html+='<td><img src="'+uploadedPhotoURL+'"  class="uploaded-photo"/></td>';
                         html+='<td>'+uploadedPhotoURL+'</td>';
+                        html+='<td><img src="'+uploadedPhotoURL+'"  class="uploaded-photo"/></td>';
                         html+=' <td>';
                         html+=' <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="'+uploadedPhotoURL+'">';
                         html+='<i class="glyphicon glyphicon-link"></i>拷贝图片地址';

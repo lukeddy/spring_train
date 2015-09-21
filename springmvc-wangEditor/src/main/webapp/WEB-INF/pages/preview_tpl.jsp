@@ -30,8 +30,8 @@
             color:#5b5b5b;
         }
         #cye-workaround-body,#cye-workaround-body-image{
-            width:0px;
-            height: 0px;
+            width: 0px !important;
+            height: 0px !important;
         }
     </style>
 </head>
@@ -42,7 +42,7 @@
 </p>
 <img src="http://image.tianjimedia.com/uploadImages/2013/205/DFS05ZUL9W1C.jpg" alt=""/>
 <p>
-    下周即将上线的全新图片任务提前剧透啦！快来看看是否有您拿手的好主题，赶紧准备吧！这次fotor针对不同难度级别的主题推出相应的购买价，不论您是拍照的好手想要挑战高价还是初入摄影世界的新人想要小试牛刀，都找得到自己擅长的主题！
+    快来看看是否有您拿手的好主题，赶紧准备吧！
 </p>
 <img src="http://pic.6188.com/upload_6188s/flashAll/20130220/1361321955aT5RRb.jpg" alt=""/>
 <p>
