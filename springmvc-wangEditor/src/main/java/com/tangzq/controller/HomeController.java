@@ -54,6 +54,15 @@ public class HomeController {
         return "index";
     }
 
+    /**
+     * 预览模版页面
+     * @return
+     */
+    @RequestMapping(value="/previewTpl")
+    public String previewTpl(){
+        return "preview_tpl";
+    }
+
     @RequestMapping(value="/preview",method = RequestMethod.POST)
     public void preview(
             FormDataVO formDataVO,

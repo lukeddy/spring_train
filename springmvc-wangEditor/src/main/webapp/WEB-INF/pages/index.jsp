@@ -31,80 +31,78 @@
 <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
 <h3 class="page-header text-center">Hello ${appName}</h3>
 <hr/>
- <div class="container">
-     <form id="myForm" action="${contextPath}/saveData" method="post">
-     <div class="row">
-         <table class="table">
-             <caption>
-                 <p><b>生成页面地址：</b><a href='<c:url value="${previewURI}"/> ' target="_blank">${previewURI}</a></p>
-             </caption>
-             <tr>
-                 <td><label>图片上传区域</label> </td>
-                 <td>
-                     <div class="row">
-                         <div id="upload_box" class="row text-center">
-                             <div id="uploaderbox">
-                                 <table class="table table-striped text-center" id="thelist"></table>
-                                 <div class="btns" id="webuploaddiv">
-                                     <div id="picker">点击选择图片</div>
-                                 </div>
-                             </div>
-                         </div>
-                         <span id="errormsg" style="margin-right:10px;color: red;font-weight:bold;"></span>
-                         <%--<button type="button" class="btn btn-default" id="uploadBtn">开始上传</button>--%>
-                     </div>
-                     <br/>
-                     <div class="row">
-                         <table class="table" id="uploadedPhotoTable">
-                             <tr>
-                                 <th>已上传图片</th>
-                                 <th>图片地址</th>
-                                 <th>操作</th>
-                             </tr>
-                             <tr>
-                                 <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
-                                 <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
-                                 <td>
-                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
-                                         <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                                     </a>
-                                     <span class="copy-msg"></span>
-                                 </td>
-                             </tr>
-                             <tr>
-                                 <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
-                                 <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
-                                 <td>
-                                     <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
-                                         <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                                     </a>
-                                     <span class="copy-msg"></span>
-                                 </td>
-                             </tr>
-                         </table>
-                     </div>
-                 </td>
-             </tr>
-             <tr>
-                 <td><label for="content">文章内容</label></td>
-                 <td>
+<div class="col-md-3 text-center">
+    <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="100%"></iframe>
+</div>
+<div class="col-md-9" style="border-right:1px dotted gray;">
+    <form id="myForm" action="${contextPath}/saveData" method="post">
+        <table class="table">
+            <tr>
+                <td><label>图片上传区域</label> </td>
+                <td>
+                    <div class="row">
+                        <div id="upload_box" class="row text-center">
+                            <div id="uploaderbox">
+                                <table class="table table-striped text-center" id="thelist"></table>
+                                <div class="btns" id="webuploaddiv">
+                                    <div id="picker">点击选择图片</div>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="errormsg" style="margin-right:10px;color: red;font-weight:bold;"></span>
+                        <%--<button type="button" class="btn btn-default" id="uploadBtn">开始上传</button>--%>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <table class="table" id="uploadedPhotoTable">
+                            <tr>
+                                <th>图片</th>
+                                <th>图片地址</th>
+                                <th>操作</th>
+                            </tr>
+                            <tr>
+                                <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
+                                <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
+                                <td>
+                                    <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
+                                        <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                                    </a>
+                                    <span class="copy-msg"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
+                                <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
+                                <td>
+                                    <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
+                                        <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                                    </a>
+                                    <span class="copy-msg"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="content">文章内容</label></td>
+                <td>
                        <textarea name="content" id='content' style='height:500px; width:100%;'>
                            ${fd.content}
                        </textarea>
-                 </td>
-             </tr>
-         </table>
-     </div>
-     <br/>
-     <div class="form-group">
-         <button type="submit" class="btn btn-primary">提交</button>
-         <button type="button" class="btn btn-default" id="btnPreview">预览</button>
-     </div>
-     </form>
-     <form action="${contextPath}/preview" id="previewForm" method="post" target="_blank">
-         <input type="hidden" name="content" value=""/>
-     </form>
- </div>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">提交</button>
+            <button type="button" class="btn btn-default" id="btnPreview">预览</button>
+        </div>
+    </form>
+    <form action="${contextPath}/preview" id="previewForm" method="post" target="_blank">
+        <input type="hidden" name="content" value=""/>
+    </form>
+</div>
 </body>
 </html>
 <script src="${contextPath}/static/js/jquery-1.10.2.min.js"></script>
@@ -125,7 +123,14 @@
 
     $(function(){
         //初始化Editor
-        var editor = $('#content').wangEditor();
+        var editor = $('#content').wangEditor({
+            'onchange': function(html){
+                //html参数即编辑器内容的源码
+                console.log(html);
+                $('#previewFrame').contents().find("body").html(html);
+            }
+        });
+
         //初始化上传组件
         initWebUploader(SWF_PATH,SERVER_UPLOAD_URL,PARAM_NAME);
         //初始化复制组件
