@@ -103,6 +103,7 @@
      </div>
      <p class="area">
          <span><b>内容编辑区>></b></span>
+         <button type="button" class="btn btn-primary pull-right disabled" id="btnSave">保存</button>
      </p>
      <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
          <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="800"></iframe>
@@ -115,13 +116,6 @@
                  </textarea>
              </p>
              <br/>
-             <div class="form-group text-right">
-                 <button type="submit" class="btn btn-primary">提交</button>
-                 <button type="button" class="btn btn-default" id="btnPreview">预览</button>
-             </div>
-         </form>
-         <form action="${contextPath}/preview" id="previewForm" method="post" target="_blank">
-             <input type="hidden" name="content" value=""/>
          </form>
      </div>
  </div>
@@ -152,7 +146,12 @@
         var editor = $('#content').wangEditor({
             'onchange': function(html){
                 //html参数即编辑器内容的源码
-                //console.log(html);
+                console.log(html.length);
+                if(html&&html.length>0){
+                    $('#btnSave').removeClass("disabled");
+                }else{
+                    $('#btnSave').addClass("disabled");
+                }
                 updatePreviewContent(html);
             }
         });
@@ -161,12 +160,15 @@
         initWebUploader(SWF_PATH,SERVER_UPLOAD_URL,PARAM_NAME);
         //初始化复制组件
         initZeroClipboard();
-        //预览按妞事件
-        $('#btnPreview').on("click",function(){
-            $('#previewForm').find('input[name="content"]').val($('#content').val());
-            $('#previewForm').submit();
+        //"保存"按钮事件
+        $('#btnSave').on("click",function(){
+            var currContent=$('#content').val();
+            if(currContent&&currContent.length>0){
+                $('#myForm').submit();
+            }else{
+                console.log("内容为空,不能提交");
+            }
         });
-
         //展开按钮事件
         showOrHideBox();
         $('#btnToggleUploadBox').click(function(){
