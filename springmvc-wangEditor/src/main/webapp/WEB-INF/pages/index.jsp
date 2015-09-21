@@ -29,75 +29,93 @@
             width: 66px;
             text-align:center;
         }
+        #upload-container{
+            max-height:266px;
+            overflow-y: scroll;
+            overflow-x:hidden;
+        }
+        #upload-container .row{
+            margin:0px;
+        }
+        .area{
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            list-style: none;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
-     <h3 class="page-header text-center">Hello ${appName}</h3>
      <hr/>
-     <div class="col-md-3 text-center">
+     <p class="area">
+         <span class="area-title"> <b>图片管理区>></b> </span>
+         <a href="javascript:void(0);" class="btn btn-link pull-right" style="color:#099ad0;margin-top:-7px;" data-value="zhankai" id="btnToggleUploadBox">收起</a>
+     </p>
+     <div id="upload-container">
+         <div class="row">
+             <div id="upload_box" class="row text-center">
+                 <div id="uploaderbox">
+                     <table class="table table-striped text-center" id="thelist"></table>
+                     <div class="btns" id="webuploaddiv">
+                         <div id="picker">点击选择图片</div>
+                     </div>
+                 </div>
+             </div>
+             <span id="errormsg" style="margin-right:10px;color: red;font-weight:bold;"></span>
+             <%--<button type="button" class="btn btn-default" id="uploadBtn">开始上传</button>--%>
+         </div>
+         <br/>
+         <div class="row table-responsive">
+             <table class="table table-condensed" id="uploadedPhotoTable">
+                 <thead>
+                 <tr>
+                     <th>图片</th>
+                     <th>图片地址</th>
+                     <th>操作</th>
+                 </tr>
+                 </thead>
+                 <tbody>
+                 <tr>
+                     <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
+                     <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
+                     <td>
+                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
+                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                         </a>
+                         <span class="copy-msg"></span>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
+                     <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
+                     <td>
+                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
+                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                         </a>
+                         <span class="copy-msg"></span>
+                     </td>
+                 </tr>
+                 </tbody>
+             </table>
+         </div>
+     </div>
+     <hr/>
+     <p class="area">
+         <span><b>内容编辑区>></b></span>
+     </p>
+     <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
          <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="100%"></iframe>
      </div>
-     <div class="col-md-9" style="border-right:1px dotted gray;">
+     <div class="col-md-9">
          <form id="myForm" action="${contextPath}/saveData" method="post">
-             <table class="table">
-                 <tr>
-                     <td><label>图片上传区域</label> </td>
-                     <td>
-                         <div class="row">
-                             <div id="upload_box" class="row text-center">
-                                 <div id="uploaderbox">
-                                     <table class="table table-striped text-center" id="thelist"></table>
-                                     <div class="btns" id="webuploaddiv">
-                                         <div id="picker">点击选择图片</div>
-                                     </div>
-                                 </div>
-                             </div>
-                             <span id="errormsg" style="margin-right:10px;color: red;font-weight:bold;"></span>
-                             <%--<button type="button" class="btn btn-default" id="uploadBtn">开始上传</button>--%>
-                         </div>
-                         <br/>
-                         <div class="row">
-                             <table class="table" id="uploadedPhotoTable">
-                                 <tr>
-                                     <th>图片</th>
-                                     <th>图片地址</th>
-                                     <th>操作</th>
-                                 </tr>
-                                 <tr>
-                                     <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
-                                     <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
-                                     <td>
-                                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
-                                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                                         </a>
-                                         <span class="copy-msg"></span>
-                                     </td>
-                                 </tr>
-                                 <tr>
-                                     <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
-                                     <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
-                                     <td>
-                                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
-                                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                                         </a>
-                                         <span class="copy-msg"></span>
-                                     </td>
-                                 </tr>
-                             </table>
-                         </div>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td><label for="content">文章内容</label></td>
-                     <td>
-                       <textarea name="content" id='content' style='height:500px; width:100%;'>
-                           ${fd.content}
-                       </textarea>
-                     </td>
-                 </tr>
-             </table>
+             <p>
+                 <textarea name="content" id='content' style='height:500px; width:100%;'>
+                     ${fd.content}
+                 </textarea>
+             </p>
              <br/>
              <div class="form-group text-right">
                  <button type="submit" class="btn btn-primary">提交</button>
@@ -116,6 +134,7 @@
 <script src="${contextPath}/static/js/wangeditor/wangEditor-1.3.9.min.js"></script>
 <script src="${contextPath}/static/js/webuploader-0.1.5/webuploader.min.js"></script>
 <script src="${contextPath}/static/js/zeroclipboard-2.2.0/ZeroClipboard.min.js"></script>
+<script src="${contextPath}/static/js/jquery.cookie.js"></script>
 <script>
     //定义全局变量
     var BASE_URL="${contextPath}",
@@ -126,6 +145,9 @@
             SWF_PATH=BASE_URL+"/static/js/webuploader-0.1.5/Uploader.swf",
             uploader,
             copyClient;
+
+    //用来存放上传区域是展开还是隐藏的cookie名称
+    var KEY_TOGGLE_BTN="editor_upload_container_val";
 
     $(function(){
         //初始化Editor
@@ -145,6 +167,20 @@
         $('#btnPreview').on("click",function(){
             $('#previewForm').find('input[name="content"]').val($('#content').val());
             $('#previewForm').submit();
+        });
+
+        //展开按钮事件
+        showOrHideBox();
+        $('#btnToggleUploadBox').click(function(){
+            var currDataValue=$(this).attr("data-value");
+            if(currDataValue==="zhankai"){
+                $.cookie(KEY_TOGGLE_BTN,"shouqi");
+                showOrHideBox();
+            }
+            if(currDataValue==="shouqi"){
+                $.cookie(KEY_TOGGLE_BTN,"zhankai");
+                showOrHideBox();
+            }
         });
     });
 
@@ -274,5 +310,16 @@
             ZeroClipboard.destroy();
             $('.copy-msg').html("出错了，无法使用拷贝功能!");
         });
+    }
+
+    function showOrHideBox(){
+        var currVal= $.cookie(KEY_TOGGLE_BTN);
+        if(currVal==="shouqi"){
+            $("#upload-container").hide();
+            $('#btnToggleUploadBox').html("展开").attr("data-value","shouqi");
+        }else{
+            $("#upload-container").show();
+            $('#btnToggleUploadBox').html("收起").attr("data-value","zhankai");
+        }
     }
 </script>

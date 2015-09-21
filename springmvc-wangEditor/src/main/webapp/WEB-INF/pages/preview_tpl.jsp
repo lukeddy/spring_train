@@ -16,7 +16,7 @@
         img{
             FLOAT: none;
             display: block;
-            width:100%;
+            max-width:100%;
             height:auto;
         }
         p{
@@ -29,11 +29,14 @@
             text-align:left;
             color:#5b5b5b;
         }
+        #cye-workaround-body,#cye-workaround-body-image{
+            width:0px;
+            height: 0px;
+        }
     </style>
 </head>
 <body>
-
-<h3>测试内容</h3>
+<h3>模版内容</h3>
 <p>
     下周即将上线的全新图片任务提前剧透啦！快来看看是否有您拿手的好主题，赶紧准备吧！这次fotor针对不同难度级别的主题推出相应的购买价，不论您是拍照的好手想要挑战高价还是初入摄影世界的新人想要小试牛刀，都找得到自己擅长的主题！
 </p>
