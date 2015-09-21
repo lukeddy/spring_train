@@ -29,10 +29,20 @@
             width: 66px;
             text-align:center;
         }
+        .upload-wrapper{
+            width:100%;
+            background:#282828;
+            position: fixed;
+            bottom:0;
+        }
         #upload-container{
             max-height:266px;
             overflow-y: scroll;
             overflow-x:hidden;
+            width:1400px;margin:auto;
+            background:#fff;
+            padding:20px;
+            margin-bottom:30px;
         }
         #upload-container .row{
             margin:0px;
@@ -44,12 +54,37 @@
             background-color: #f5f5f5;
             border-radius: 4px;
         }
+        .area-bottom{
+            padding: 8px 15px;
+            margin-bottom: 0px;
+            list-style: none;
+            background-color: #282828;
+            border-radius: 4px;
+            color:#fff;
+            font-size:16px;
+        }
     </style>
 </head>
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
-     <p class="area">
+     <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
+         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="800"></iframe>
+     </div>
+     <div class="col-md-9">
+         <form id="myForm" action="${contextPath}/saveData" method="post">
+             <p>
+                 <textarea name="content" id='content' style='height:800px; width:100%;'>
+                     ${fd.content}
+                 </textarea>
+             </p>
+             <br/>
+         </form>
+         <button type="button" class="btn btn-primary pull-right disabled" id="btnSave">保存</button>
+     </div>
+ </div>
+ <div class="upload-wrapper">
+     <p class="area-bottom">
          <span class="area-title"> <b>图片管理区>></b> </span>
          <a href="javascript:void(0);" class="btn btn-link pull-right" style="color:#099ad0;margin-top:-7px;" data-value="zhankai" id="btnToggleUploadBox">收起</a>
      </p>
@@ -100,23 +135,6 @@
                  </tbody>
              </table>
          </div>
-     </div>
-     <p class="area">
-         <span><b>内容编辑区>></b></span>
-         <button type="button" class="btn btn-primary pull-right disabled" id="btnSave">保存</button>
-     </p>
-     <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
-         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="800"></iframe>
-     </div>
-     <div class="col-md-9">
-         <form id="myForm" action="${contextPath}/saveData" method="post">
-             <p>
-                 <textarea name="content" id='content' style='height:800px; width:100%;'>
-                     ${fd.content}
-                 </textarea>
-             </p>
-             <br/>
-         </form>
      </div>
  </div>
 </body>
@@ -261,7 +279,7 @@
                         html+='<span class="copy-msg"></span>';
                         html+='</td>';
                         html+='</tr>';
-                    $('#uploadedPhotoTable').append(html);
+                    $('#uploadedPhotoTable').prepend(html);
 
                    //移除已上传文件
                    $('#thelist').find('#photo-item'+file.id).remove();
