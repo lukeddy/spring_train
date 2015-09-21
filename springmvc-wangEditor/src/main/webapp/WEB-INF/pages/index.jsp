@@ -68,19 +68,21 @@
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
+     <h3 class="text-center">手机内容编辑器</h3>
+     <hr/>
      <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
-         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="800"></iframe>
+         <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="700"></iframe>
      </div>
      <div class="col-md-9">
          <form id="myForm" action="${contextPath}/saveData" method="post">
              <p>
-                 <textarea name="content" id='content' style='height:800px; width:100%;'>
+                 <textarea name="content" id='content' style='height:700px; width:100%;'>
                      ${fd.content}
                  </textarea>
              </p>
              <br/>
          </form>
-         <button type="button" class="btn btn-primary pull-right disabled" id="btnSave">保存</button>
+         <a href="javascript:void(0);" class="btn btn-primary pull-right disabled" id="btnSave">保存</a>
      </div>
  </div>
  <div class="upload-wrapper">
