@@ -89,20 +89,20 @@
          <a href="javascript:void(0);" class="btn btn-link pull-right" style="color:#099ad0;margin-top:-7px;" data-value="zhankai" id="btnToggleUploadBox">收起</a>
      </p>
      <div id="upload-container">
-         <div class="row">
-             <div id="upload_box" class="row text-center">
+         <div class="col-md-3">
+             <div id="upload_box" class="text-center">
                  <div id="uploaderbox">
-                     <table class="table table-striped text-center" id="thelist"></table>
                      <div class="btns" id="webuploaddiv">
                          <div id="picker">点击选择图片</div>
                      </div>
+                     <table style="max-height:160px;overflow-y: scroll;overflow-x: hidden;" class="table table-striped text-center" id="thelist"></table>
                  </div>
              </div>
              <span id="errormsg" style="margin-right:10px;color: red;font-weight:bold;"></span>
              <%--<button type="button" class="btn btn-default" id="uploadBtn">开始上传</button>--%>
          </div>
          <br/>
-         <div class="row table-responsive">
+         <div class="col-md-9">
              <table class="table table-condensed" id="uploadedPhotoTable">
                  <thead>
                  <tr>
