@@ -200,6 +200,9 @@
                 showOrHideBox();
             }
         });
+
+        //解决不明代码在页面最后加入导致整个页面出现滚动条，影响操作的问题
+        $('#cye-workaround-body,#cye-workaround-body-image').attr("style","display:none;width:0px;height:0px;");
     });
 
 
