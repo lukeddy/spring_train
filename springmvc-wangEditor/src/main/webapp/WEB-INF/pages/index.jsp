@@ -68,7 +68,7 @@
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
-     <h3 class="text-center">手机内容编辑器</h3>
+     <h3 class="text-center">手机内容生成器 <a class="btn btn-link pull-right" id="btnMobileTest" href="javascript:void(0);">手机测试</a></h3>
      <hr/>
      <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
          <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="700"></iframe>
@@ -139,6 +139,27 @@
          </div>
      </div>
  </div>
+<div class="dialog-wrapper">
+    <div class="modal fade" id="dialogQRcode">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body text-center">
+                    <h3>扫描下方二维码测试</h3>
+                    <div class="thumbnail">
+                        <img style="display:inline-block;width:256px;height:256px;" src="http://qr.liantu.com/api.php?text=http://www.fotor.com/test.html"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 <script src="${contextPath}/static/js/jquery-1.10.2.min.js"></script>
@@ -201,6 +222,11 @@
                 $.cookie(KEY_TOGGLE_BTN,"zhankai");
                 showOrHideBox();
             }
+        });
+
+        //手机测试事件
+        $('#btnMobileTest').on("click",function(){
+            $('#dialogQRcode').modal("show");
         });
 
         //解决不明代码在页面最后加入导致整个页面出现滚动条，影响操作的问题
