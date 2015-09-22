@@ -27,10 +27,13 @@ import org.springframework.web.util.WebUtils;
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -42,15 +45,13 @@ public class HomeController {
     @Autowired
     private ContentService contentServicer;
 
+    private List<String> uploadedImgList=new ArrayList<String>();
     /**
      * 跳转到首页
      * @return
      */
     @RequestMapping(value="/home")
-    public String index(
-            ModelMap modelMap
-    ){
-        modelMap.addAttribute("appName", contentServicer.getAppName());
+    public String index(){
         return "index";
     }
 
@@ -77,7 +78,7 @@ public class HomeController {
                 FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
                 String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
                 //生成预览地址
-                String previewURL=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+previewURI;
+                String previewURL=getHostAddr(request)+previewURI;
                 String goToPage="<!DOCTYPE html><meta http-equiv='refresh' content='0; url="+previewURL+"'/>";
                 IOUtils.write(goToPage,response.getWriter());
             }else{
@@ -91,22 +92,25 @@ public class HomeController {
     @RequestMapping(value="/saveData",method = RequestMethod.POST)
     public String saveFormData(
         FormDataVO formDataVO,
+        HttpServletRequest request,
+        HttpSession session,
         ModelMap model
     ){
-        System.out.println("content:" + formDataVO.getContent());
-        model.addAttribute("fd", formDataVO);
-        model.addAttribute("appName", contentServicer.getAppName());
+        //System.out.println("content:" + formDataVO.getContent());
+        session.setAttribute("fd", formDataVO);
         try {
             String filename=System.currentTimeMillis()+".html";
             String filePath=getFullPath4Upload(filename);
             String newContent=contentServicer.combineContent(formDataVO.getContent());
             if(null!=newContent){
-                FileCopyUtils.copy(newContent.getBytes(),new FileOutputStream(new File(filePath)));
+                FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
                 String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
                 model.addAttribute("previewURI",previewURI);
-                model.addAttribute("suc_msg","生成内容成功！");
+                String previewURL=getHostAddr(request)+previewURI;
+                model.addAttribute("previewURL",previewURL);
+                model.addAttribute("suc_msg", "生成内容成功！");
             }else{
-                model.addAttribute("fail_msg","生成内容失败");
+                model.addAttribute("fail_msg", "生成内容失败");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -132,7 +136,9 @@ public class HomeController {
     @RequestMapping(value="/doUploadPhoto",method = RequestMethod.POST)
     @ResponseBody
     public JsonObject doUploadPhoto(
-            @RequestParam(value = "photoFile",required =true)MultipartFile photoFile){
+            @RequestParam(value = "photoFile",required =true)MultipartFile photoFile,
+            HttpSession session
+            ){
         JsonObject json=new JsonObject();
         try {
             if(null!=photoFile){
@@ -142,6 +148,8 @@ public class HomeController {
                 json.setStatus(Boolean.TRUE);
                 json.setMsg("保存图片成功");
                 json.setData(savedURI);
+                uploadedImgList.add(savedURI);
+                session.setAttribute("uploadedImgList",uploadedImgList);
                 //TODO 将会话期内的图片保存到session中，方便下次重复利用
             }else{
                 json.setStatus(Boolean.FALSE);
@@ -169,6 +177,12 @@ public class HomeController {
 
     }
 
+    /**
+     * 取得保存文件的全路径
+     * @param filename
+     * @return
+     * @throws IOException
+     */
     private String getFullPath4Upload(String filename) throws IOException {
         String uploadPath=getUploadFolderPath();
         File folder=new File(uploadPath);
@@ -178,10 +192,24 @@ public class HomeController {
         return uploadPath+File.separator+filename;
     }
 
+    /**
+     * 取得上传目录全路径
+     * @return
+     * @throws FileNotFoundException
+     */
     private String getUploadFolderPath() throws FileNotFoundException {
         WebApplicationContext webApplicationContext = ContextLoader.getCurrentWebApplicationContext();
         ServletContext servletContext = webApplicationContext.getServletContext();
         String uploadFolderPath = WebUtils.getRealPath(servletContext, Constant.UPLOAD_FOLDER);
         return uploadFolderPath;
+    }
+
+    /**
+     * 取得主机域名以及端口号地址，如：http://www.example.com:8080
+     * @param request
+     * @return
+     */
+    private String getHostAddr(HttpServletRequest request){
+        return request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
     }
 }

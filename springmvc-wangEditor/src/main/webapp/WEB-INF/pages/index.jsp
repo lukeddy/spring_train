@@ -68,9 +68,9 @@
 <body>
  <div class="wrapper">
      <mytag:alert sucMsg="${suc_msg}" failMsg="${fail_msg}"/>
-     <h3 class="text-center">手机内容生成器 <a class="btn btn-link pull-right" id="btnMobileTest" href="javascript:void(0);">手机测试</a></h3>
+     <h3 class="text-center">手机内容生成器 <c:if test="${not empty previewURL}"><a class="btn btn-link pull-right" id="btnMobileTest" href="javascript:void(0);">手机测试</a></c:if></h3>
      <hr/>
-     <div class="col-md-3 text-center" style="border-right:1px dotted gray;">
+     <div class="col-md-3 text-center" style="border:1px dotted gray;">
          <iframe id="previewFrame" src="${contextPath}/previewTpl" frameborder="0" height="700"></iframe>
      </div>
      <div class="col-md-9">
@@ -114,32 +114,47 @@
                  </tr>
                  </thead>
                  <tbody>
-                 <tr>
-                     <td>http://static.bootcss.com/www/assets/img/codeguide.png</td>
-                     <td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>
-                     <td>
-                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">
-                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                         </a>
-                         <span class="copy-msg"></span>
-                     </td>
-                 </tr>
-                 <tr>
-                     <td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>
-                     <td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>
-                     <td>
-                         <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">
-                             <i class="glyphicon glyphicon-link"></i>拷贝图片地址
-                         </a>
-                         <span class="copy-msg"></span>
-                     </td>
-                 </tr>
+                 <c:if test="${not empty uploadedImgList}">
+                     <c:forEach items="${uploadedImgList}" var="imgAddr">
+                         <tr>
+                             <td>${contextPath}${imgAddr}</td>
+                             <td><img src="${contextPath}${imgAddr}"  class="uploaded-photo"/></td>
+                             <td>
+                                 <a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="${contextPath}${imgAddr}">
+                                     <i class="glyphicon glyphicon-link"></i>拷贝图片地址
+                                 </a>
+                                 <span class="copy-msg"></span>
+                             </td>
+                         </tr>
+                     </c:forEach>
+                 </c:if>
+                 <%--<tr>--%>
+                     <%--<td>http://static.bootcss.com/www/assets/img/codeguide.png</td>--%>
+                     <%--<td><img src="http://static.bootcss.com/www/assets/img/codeguide.png"  class="uploaded-photo"/></td>--%>
+                     <%--<td>--%>
+                         <%--<a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/codeguide.png">--%>
+                             <%--<i class="glyphicon glyphicon-link"></i>拷贝图片地址--%>
+                         <%--</a>--%>
+                         <%--<span class="copy-msg"></span>--%>
+                     <%--</td>--%>
+                 <%--</tr>--%>
+                 <%--<tr>--%>
+                     <%--<td>http://static.bootcss.com/www/assets/img/jqueryapi.png</td>--%>
+                     <%--<td><img src="http://static.bootcss.com/www/assets/img/jqueryapi.png"  class="uploaded-photo"/></td>--%>
+                     <%--<td>--%>
+                         <%--<a href="javascript:void(0)" class="btn btn-success btn-copy-link"  data-link="http://static.bootcss.com/www/assets/img/jqueryapi.png">--%>
+                             <%--<i class="glyphicon glyphicon-link"></i>拷贝图片地址--%>
+                         <%--</a>--%>
+                         <%--<span class="copy-msg"></span>--%>
+                     <%--</td>--%>
+                 <%--</tr>--%>
                  </tbody>
              </table>
          </div>
      </div>
  </div>
 <div class="dialog-wrapper">
+<c:if test="${not empty previewURL}">
     <div class="modal fade" id="dialogQRcode">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -150,7 +165,7 @@
                 <div class="modal-body text-center">
                     <h3>扫描下方二维码测试</h3>
                     <div class="thumbnail">
-                        <img style="display:inline-block;width:256px;height:256px;" src="http://qr.liantu.com/api.php?text=http://www.fotor.com/test.html"/>
+                        <img style="display:inline-block;width:256px;height:256px;" src="http://qr.liantu.com/api.php?text=${previewURL}"/>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -159,6 +174,7 @@
             </div>
         </div>
     </div>
+</c:if>
 </div>
 </body>
 </html>
