@@ -165,7 +165,8 @@
                 <div class="modal-body text-center">
                     <h3>扫描下方二维码测试</h3>
                     <div class="thumbnail">
-                        <img style="display:inline-block;width:256px;height:256px;" src="http://qr.liantu.com/api.php?text=${previewURL}"/>
+                        <p><img style="display:inline-block;width:256px;height:256px;" src="http://qr.liantu.com/api.php?text=${previewURL}"/></p>
+                        <p><a href="${previewURL}" target="_blank">${previewURL}</a></p>
                     </div>
                 </div>
                 <div class="modal-footer">

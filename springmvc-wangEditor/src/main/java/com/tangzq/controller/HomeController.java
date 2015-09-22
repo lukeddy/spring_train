@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.ContextLoader;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.web.util.WebUtils;
 
 import javax.servlet.ServletContext;
@@ -64,37 +65,37 @@ public class HomeController {
         return "preview_tpl";
     }
 
-    @RequestMapping(value="/preview",method = RequestMethod.POST)
-    public void preview(
-            FormDataVO formDataVO,
-            HttpServletRequest request,
-            HttpServletResponse response
-    ){
-        try {
-            String filename=System.currentTimeMillis()+".html";
-            String filePath=getFullPath4Upload(filename);
-            String newContent=contentServicer.combineContent(formDataVO.getContent());
-            if(null!=newContent){
-                FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
-                String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
-                //生成预览地址
-                String previewURL=getHostAddr(request)+previewURI;
-                String goToPage="<!DOCTYPE html><meta http-equiv='refresh' content='0; url="+previewURL+"'/>";
-                IOUtils.write(goToPage,response.getWriter());
-            }else{
-                IOUtils.write("empty page",response.getWriter());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    @RequestMapping(value="/preview",method = RequestMethod.POST)
+//    public void preview(
+//            FormDataVO formDataVO,
+//            HttpServletRequest request,
+//            HttpServletResponse response
+//    ){
+//        try {
+//            String filename=System.currentTimeMillis()+".html";
+//            String filePath=getFullPath4Upload(filename);
+//            String newContent=contentServicer.combineContent(formDataVO.getContent());
+//            if(null!=newContent){
+//                FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
+//                String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
+//                //生成预览地址
+//                String previewURL=getHostAddr(request)+previewURI;
+//                String goToPage="<!DOCTYPE html><meta http-equiv='refresh' content='0; url="+previewURL+"'/>";
+//                IOUtils.write(goToPage,response.getWriter());
+//            }else{
+//                IOUtils.write("empty page",response.getWriter());
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     @RequestMapping(value="/saveData",method = RequestMethod.POST)
     public String saveFormData(
         FormDataVO formDataVO,
         HttpServletRequest request,
         HttpSession session,
-        ModelMap model
+        RedirectAttributes redirectAttributes
     ){
         //System.out.println("content:" + formDataVO.getContent());
         session.setAttribute("fd", formDataVO);
@@ -105,17 +106,16 @@ public class HomeController {
             if(null!=newContent){
                 FileCopyUtils.copy(newContent.getBytes(), new FileOutputStream(new File(filePath)));
                 String previewURI="/"+Constant.UPLOAD_FOLDER +"/"+filename;
-                model.addAttribute("previewURI",previewURI);
                 String previewURL=getHostAddr(request)+previewURI;
-                model.addAttribute("previewURL",previewURL);
-                model.addAttribute("suc_msg", "生成内容成功！");
+                redirectAttributes.addFlashAttribute("previewURL", previewURL);
+                redirectAttributes.addFlashAttribute("suc_msg", "生成内容成功！");
             }else{
-                model.addAttribute("fail_msg", "生成内容失败");
+                redirectAttributes.addFlashAttribute("fail_msg", "生成内容失败");
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return "index";
+        return "redirect:/home";
     }
 
     /**

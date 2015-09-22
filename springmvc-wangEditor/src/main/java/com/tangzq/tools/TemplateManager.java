@@ -20,16 +20,16 @@ public class TemplateManager {
     private VelocityEngine velocityEngine;
 
     /**
-     * Ê¹ÓÃÄ£°æ¼¼Êõ½«ÄÚÈİ½øĞĞÕûºÏ£¬Æ´×°Ò»Ğ©¶¨ÖÆµÄ¶«Î÷
+     * å°†å†…å®¹å¡«å……åˆ°æ¨¡ç‰ˆä¸­
      * @param content
      * @return
      */
     public String parseTemplate(String content){
         Map<String,Object> data=new HashMap<String,Object>();
         data.put("content", content);
-        logger.info("Ô­Ê¼ÄÚÈİ:"+content);
+        logger.info("è¦å¡«å……çš„å†…å®¹ä¸º:"+content);
         String newContent=VelocityEngineUtils.mergeTemplateIntoString(velocityEngine, "templates/mytemplate.vm", "utf-8", data);
-        logger.info("ÕûºÏºóµÄÄÚÈİ£º"+newContent);
+        logger.info("å¡«å……åçš„å†…å®¹ä¸º"+newContent);
         return newContent;
     }
 }

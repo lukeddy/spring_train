@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
- * ÄÚÈİ·şÎñÀà
+ * æ¨¡ç‰ˆå°è£…ç±»
  */
 @Service
 public class ContentServiceImpl implements ContentService {
@@ -23,7 +23,7 @@ public class ContentServiceImpl implements ContentService {
     }
 
     /**
-     * ½«ÄÚÈİ½øĞĞÕûºÏ£¬×éºÏ³ÉĞÂµÄÄÚÈİ
+     * ä½¿ç”¨æ¨¡ç‰ˆæŠ€æœ¯å®šåˆ¶ç½‘é¡µå†…å®¹
      * @param content
      * @return
      */
