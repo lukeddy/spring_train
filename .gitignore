@@ -6,3 +6,9 @@
 /springmvc-velocity-ffmpeg-demo/target
 /thrift-demo/thrift-demo.iml
 /thrift-demo/.idea
+.DS_Store
+thrift-demo/target
+.idea
+spring-transaction/spring-transaction.iml
+spring-transaction/target
+springmvc-databinding/target
