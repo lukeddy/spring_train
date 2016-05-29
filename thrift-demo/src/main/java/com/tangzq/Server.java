@@ -14,7 +14,7 @@ public class Server
 {
     public static void main( String[] args )
     {
-        int serverPort=8888;
+        int serverPort=9999;
         try {
             AdditionService.Processor<AdditionServiceImpl> myProcessor =  new AdditionService.Processor<AdditionServiceImpl>(new AdditionServiceImpl());
 

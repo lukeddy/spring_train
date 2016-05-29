@@ -22,13 +22,14 @@ public class AppTest
         System.out.println("模拟客户端");
         try {
             TTransport transport;
-            transport = new TSocket("localhost", 8888);
+            transport = new TSocket("localhost", 9999);
             transport.open();
             TProtocol protocol = new TBinaryProtocol(transport);
 
             AdditionService.Client client = new AdditionService.Client(protocol);
 
-            System.out.println(client.add(100, 200));
+            System.out.println("计算结果为:");
+            System.out.println(client.add(123, 200));
 
             transport.close();
         } catch (TTransportException e) {
