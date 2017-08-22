@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/data/mongo
+       http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="simpleMongoDbFactory"/>
+    </bean>
+
+    <bean name="simpleMongoDbFactory" class="org.springframework.data.mongodb.core.SimpleMongoDbFactory">
+        <constructor-arg name="mongo">
+            <bean class="com.mongodb.Mongo">
+                <constructor-arg value="${config.mongo.address}"/>
+                <!--<constructor-arg value="20012" />-->
+            </bean>
+        </constructor-arg>
+        <constructor-arg name="databaseName" value="${config.mongo.database}"/>
+        <constructor-arg name="credentials">
+            <bean class="org.springframework.data.authentication.UserCredentials">
+                <constructor-arg value="${config.mongo.username}"/>
+                <constructor-arg value="${config.mongo.password}"/>
+            </bean>
+        </constructor-arg>
+    </bean>
+
+    <mongo:repositories base-package="com.tangzq.repository"/>
+</beans>
