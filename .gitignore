@@ -12,3 +12,6 @@ thrift-demo/target
 spring-transaction/spring-transaction.iml
 spring-transaction/target
 springmvc-databinding/target
+springmvc-mongodb/.idea
+springmvc-mongodb/springmvc_mongodb.iml
+springmvc-mongodb/target
